@@ -1,0 +1,391 @@
+
+
+	Chapter 3: How To Monetize Your Mobile App Monetizing your mobile app is probably the most difficult part of creating a successful mobile app business. The focus on monetization should begin during the business planning phase, before you even write your first line of code. There should be natural, apparent, and proven ways for how to make money from the mobile app you are planning to create. Having said that, the best time to put most of your focus on monetization is when your app begins
+to consistently get many downloads. If your app has many downloads, that is when you are going to be able to make any kind of significant revenue from it. There isn’t much sense in trying to make money with the app when it first launches because if you don’t have many users, the app won’t make much money anyway.
+
+
+	Should A Mobile App Be Free Or Paid? The trend for mobile apps is to be free. More and more apps are free, and the app store ecosystems are geared for apps that are free to get more exposure, and ultimately win. Just imagine, if you are a user who is searching the app store and scrolling through the apps in the search results, are you going to try the free ones first, or the paid ones? Nearly all consumers first try the free option, and rarely get to the paid option. When you have a free
+and a paid product next to each other, most consumers gravitate towards the free offering first.
+
+	Most apps today (and increasingly so in the future) will be free and operating under the freemium business model. Most of the highest earning apps are actually free. They earn money by generating a significant amount of downloads and finding ways to make money from their users as they are using the app.
+
+
+	How Much To Charge For An App If You Do Make It Paid Let's explore some of the thought process behind finding the ideal price for your mobile app.
+
+	The problem with making your apps free is obvious. As the developer, you probably prefer to make money from from your work. You didn't slave over your app just to give it away. And there is no guarantees that your free app will be lucrative because it is entirely up to you to experiment with different monetization strategies inside your free app, and there is no guarantee that you will ever find a great monetization strategy that is as effective as you need.
+
+	Despite the app stores ecosystem pressuring developers to make their apps free, there are many different situations when you should make your app a paid app. Let's consider them in no particular order. One case when you can make your app paid is if you are able to get distribution from another platform. For example, if you have a large YouTube channel, you can funnel people from YouTube to buy your app. If you think about it, the whole point behind making your app free is to put it in a
+position to get downloads from app stores. If you can get mass distribution from any other platform, and are able to funnel people from there to your app, you don’t have to rely on app stores as much, and can make your app paid.
+
+	Another instance when you can make your app paid is when you don't have the desire or resources to experiment with in-app monetization strategies. It can take a significant amount of your resources (time and money) to find an effective in-app monetization strategy, and there is no guarantee that you will ever find one. For that reason, you can just make your app paid.
+
+	Another case when you can make your app paid is if it is something very unique. For example, there is a famous app that lawyers use to study for legal exams. That app is paid, and it is expensive because it is a one of a kind app. Another instance when an app can be paid is when you sell it to your existing customers as a product in your product line. Another instance when an app can be paid is when the niche in which you are competing in is not competitive, and the app does not need to
+compete in the app store against similar apps that are free. HOW MUCH TO CHARGE FOR YOUR PAID APPS
+
+	Apps live and die by their reviews. What that means for your app price is that your users must feel that they are getting a good deal when they buy your app. So you are forced to maintain low prices. The lowest price range is the $0.99 to $1.99 with 2.99 already considered mid-range for app pricing. These prices are very problematic because it is difficult to get people to open up their wallets, and when they do, you are only able to extract a few dollars. If a customer is ready to spend
+more money with your business, you have no way of making that happen.
+
+	For an app to be $4.99 or above, it should be quite special, or consumers will revolt by posting reviews that are not very good.
+
+
+	Making Money With Ads No matter how you spin it, your users will dislike (or sometimes hate) the ads that you put in front of them. And if users hate your ads, the reviews they will give your app will be worse than if your app did not have those ads. That is just a reality of monetizing your apps. If you decide to use ads, you can use banner ads, interstitial ads, ads to download other apps, or in-content ads that don't look like ads, but look like your own content. The ladder two are my
+favorite strategies, and ones that I recommend if you decide to publish ads on your app.
+
+	The effectiveness of an ad's monetization is measured in CPM which is the money you earn per 1,000 impressions of that ad. When you hear different vendors talk about the effectiveness of their ads, they will most often refer to the CPM of the ad.
+
+	Let's explore the different ads you can use to monetize your app. While I discuss different ad types, I specifically do not mention any companies or vendors. Banner Display Ads
+
+	The simplest and most familiar type of mobile ad is the rectangular banner ad that appears on the screen while users use your app. Web and mobile users are well trained to avoid that ad, and develop a certain ad blindness to this kind of an advertisement. Almost no one clicks on such ads, and when they do, a large part of those clicks are mistake clicks where the user meant to tap on something else, but hit the ad instead due to the small screen sizes of mobile phones. These ads are
+usually disliked by users, earn low CPMs, and result in decreased engagement and worse reviews for your app. Interstitial Ads
+
+	Interstitial ads are ads that pop up when you are in the middle of doing something like going from one screen to the next. They monetize a little better because they are more "in your face" to your users, but that is also why most of the time, users hate those ads with a passion. A very large part of mobile users scramble to find how to close that ad as soon as it appears. I personally do not recommend using such ads as I had very poor results when I experimented with putting them on my
+apps. Nevertheless, many app developers use them because they can be more effective at generating revenue than basic display ads. Ads To Download Other Apps
+
+	One typically effective way to use ads on your app is to advertise other apps on a pay per install basis. A typical install, depending on the kind of app it is, can earn payouts of a few pennies to a few dollars. If you can promote the more lucrative apps, this can be an effective monetization strategy. To find such offers, just search for "Pay Per Install" or CPA mobile advertising firms. In-Content Ads
+
+	Another kind of ad that I like doesn't look like an ad at all. It looks just like the rest of your content. You can promote anything you want with that kind of an ad. It can be in-app purchases, your other products, or affiliate offers. The key is to make the text explaining the offer, and the button that links to the offer to look like it naturally belongs in your app, and is a part of your content.
+
+	For example, one of the products I offer on my apps is for people to create a website. Most people starting a business need a website. So in my apps, I made a tutorial for how to set up your website for free and without needing technical help. My users like this article because it is truly helpful. A part of that tutorial focuses on web hosting, which is something all website owners need. There, I suggest a particular hosting company, and link to it. It is helpful to my app users, and it
+is a natural thing to promote in my apps. My users appreciate it, and I get to make money. That is the ideal way to create an in-content ad.
+
+	One note of caution is that you must always disclose to people that this is an ad or a partner company of yours, and that you will gain something from them engaging with whatever you are promoting. You can make that disclaimer subtle somewhere near the ad.
+
+	M obile App M ediation To Earn Hundreds O f Percent M ore From Your Ads
+
+	If you use an off the shelf ad company like AdMob or something similar, you should use something called ad mediation. This is where you use a 3rd party software which aggregates about 20 services like AdMob and gets you the best ad to display to users each time. This can result in doubling or tripling your revenue from your display ads.
+
+	I don’t promote individual vendors in this book, so simply Google for “smart ad mediation for mobile ads” and you will find many companies that provide this service. It is easy to set up and you can begin making more money from ads almost immediately as soon as your app update with ad mediation hits the app stores.
+
+
+	Making Money With Affiliate Products You can sell products made by other companies, and earn a commission. That is called affiliate marketing/sales. For example, since my apps are made for entrepreneurs, many entrepreneurs need websites for their businesses. And it is a very natural thing for me to offer them services like website hosting. It is something they need, and appreciate it when I make a good recommendation. Since I don’t provide website hosting as a service, I recommend other
+companies that do provide that, and collect a commission for the referral when a sale is made.
+
+	And at the same time, I get a commission and people get help. It is a win-win situation.
+
+
+	Making Money With In-App Purchases Android and iOS platforms allow for in-app purchases. Pound for pound, the best in-app purchases are subscriptions because they aren't just one time transactions. If a user stays subscribed to your service for years, that user can ultimately bring thousands more percent in revenue to your business than if they only bought your product once.
+
+	The biggest challenge is making sure that whatever in-app purchase you offer makes sense for your users, and is something they really want or need. If it isn't something they want or need, they won't buy it. Think long and hard about what premium features your users might need, and make that into in-app purchases.
+
+	Also think about what features they might need on a regular basis. Regular-use features are perfect for selling subscriptions since the users use those features on an ongoing basis. The next best thing to subscriptions is selling consumable in-app products. I’ll touch on them shortly in an upcoming section that talks about the whale monetization pattern.
+
+
+	Making Money By Selling Your Own Products In the case of my apps, I sell my online courses, my books, additional apps, and a few other kinds of digital products. People don't mind it as much because I don't sell them via blatant banner ads. Plus, my books and courses teach people how to start and promote their businesses, so they are very relevant to what the users got my apps in the first place. If you have your own products that you can create and promote, it can be better than selling
+affiliate products because you keep a larger part of the commission and have more control over the quality of the user’s experience with the product they buy from you.
+
+
+	Making Money By Selling Services In my apps, one of the things I sell is my business coaching. Since my apps are business apps, the apps are a way to show people that my apps and my help is valuable. People who feel that they get help from the apps, often want one on one coaching, and to be able to ask specific questions. I sell personalized coaching in two different ways. The first way I sell personalized coaching is as a premium feature. If people buy a paid $0.99 premium app, they can
+ask me business questions over chat right on the app. It is a very affordable option. For those who feel that they need much more help, I offer business coaching over Skype, which costs $50/hour.
+
+	If your app is some sort of a utility or business app, you can up-sell your services from the app. Keep in mind that the app store economy makes consumers want things for free or for very cheap prices. So it will be difficult to sell an expensive services. Nevertheless, it is a very reasonable option.
+
+
+	The Whale Monetization Pattern Most mobile app users will never pay for anything on your app no matter how much they want or need the extra features that come with the purchase. That is OK. It is just a part of doing business. Instead of focusing on those consumers, it can often be much more productive to identify and focus on the consumers that do pay. People that do pay are interesting because some of them may be able to spend a substantial amount of money with your business. The
+customers that spend a significant amount of money on your business are called whales because the amount they spend are whale-sized when compared to the rest of your customers.
+
+	Let's go over a popular pattern as an example of how some games use this whale pattern to extract as much money as possible from customers who are able to spend it. If you play mobile app games, you may realize that many of the games have an unlimited number of levels. There is no end to many of the games. You start out playing for free, and get hooked to the game because it is fun. People who get hooked eventually make it far enough in the game where they can't beat a certain level
+because the game just becomes too difficult. That is done on purpose by game developers. Once users are stuck on some level, they are given a choice to buy extra items or points to help them beat levels of the game for as little as $0.99.
+
+	Most people don't buy such items, but few people do. Once an individual has justified making such a purchase in their minds, making the same purchase again may not seem to them like a big deal. Guess what happens in the next level of the game. It doesn't get any easier. In fact, it gets harder and harder. To beat further levels these users have to spend $0.99 again and again.
+
+	Most people do this only a few times, and eventually stop. But some people who are hooked and addicted enough to the game have been known to spend thousands or even tens of thousands of dollars this way. These people are obviously rare, and their judgement and even emotional stability may be questionable, but they do exist.
+
+	These whale users tend to account for the bulk of the revenue for many games out there even though they make up a tiny fraction of all the game players for a given app. There is also an ethical question of whether this kind of an approach should be used since it takes advantage of people's psychological weaknesses who are maybe prone to addiction. Nevertheless, this pattern is one way in which many mobile app developers have found a lucrative way to make money from their apps.
+
+	For your part, as the entrepreneur, you must always think about ways to extract as much money from customers as you possibly can. It may not sound like the most ethical thing to do, but if you want your app or business to survive, your challenge is certainly to find paths to sustainable revenue sources.
+
+	And you should have no problem taking as much money as you can from customers as long as you give them amazing value in return.
+
+
+	How To Maximize Your App’s Revenue Whatever your app may be, one of the most common strategies to maximize your revenue is to extend the relationship that your customers have with your business. The longer your users use your app, the longer they have to warm up to the idea of buying various items from you.
+
+	Try to think of features that can make the app something that your users use every day, and make a part of their daily habit. This isn't simple. Personally, I have been thinking for quite a long time about such features for my business apps, and while I've come up with features that satisfy this goal to some degree, honestly I am not happy with what I've come up with, and I am still thinking of something better. I feel that I have not found the perfect killer feature. I mention this not
+to complain, but rather to illustrate how challenging this can be. For some apps such features are natural, but for some apps it is extremely challenging. So if you don't come up with such a feature quickly, don't be discouraged. Keep it in the back of your mind and keep thinking about it.
+
+	Once you come up with a way to make your app a part of people's daily habits or tasks, it becomes natural to sell a subscription-based in-app purchase inside your app. The key to subscriptions is that once people subscribe, they rarely unsubscribe. It takes work to unsubscribe, and frankly, many of your users won't even be able to figure out how to unsubscribe. Think about how your local exercise gyms make money. They all work on the subscription model because many people exercise for a
+few months, quit exercising, but think that one day they will go back to exercising. So they keep their gym memberships. Because of this nuance, many business owners covet subscription-based revenue models.
+
+	If it doesn't make sense to create a subscription offer for the type of app that you have, there is another option that is nearly as good. You can simply create features that your users will want to come back to on a regular basis. That way you can get people hooked on using those features without making them sign up for a subscription. A subscription won't be as necessary if those people are naturally hooked to using a paid feature. The difference is that when those people stop being
+hooked, they will stop making the purchase whereas if they were signed up for a subscription, they would have to do a bit of extra work to unsubscribe, which is something many people wouldn't do.
+
+	Another way to make sure you put yourself in a good position to get your users to spend the maximum amount of money with your app is by offering multiple products. People who like your products are often open to buying more from your business. You just have to actually have something else to sell to them that they may want. In the case of my apps, they come as a 4-app series. 15-20% of the people who buy any of my paid apps go on to buy at least one more of my paid apps. That has been a
+very successful way for me to increase the average revenue from users of the apps who are open to spending money on my apps. In fact, you don't have to stop there. Some people go through all 4 of my paid apps, and want more. For those people I offer courses, books, and my coaching. It rarely happens that a person gets my apps, books, courses and coaching, but every once in a while that does happen. When it does, that single person can bring hundreds or even thousands of dollars of revenue.
+They are my whales and I love them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	That concludes this chapter. Before moving on to the next chapter I want to take a little pause and see how you are doing. Are you enjoying the book? Is it helpful? Do you have questions?
+
+	You should always feel welcome to email me at: alex.genadinik@gmail.com
+
+	I would love to hear your thoughts about the book, and your suggestions for what I can potentially add to the book to try making it even better.
+
+	Want me to review your app?
+
+	If you email me with feedback, I will be happy to review your app in the app stores as well and hopfully give it a nice rating.
+
+	And, of course, if you are enjoying the book, it would really help me if you could leave a review of it on Amazon. Books really depend on readers like you to leave testimonials, and it would help me get the word out about this book if you took a minute to add a review on Amazon. Chapter 4: Additional Tactics And Strategies
+
+	Comparing Mobile App Stores: GooglePlay vs. Apple App Store vs. Kindle vs. Windows Phone Store vs. Blackberry vs. NOOK There are many app stores to choose from, and it is difficult to focus on all of them equally well. Let's go over the pros and cons of each app store when it comes to monetization, marketing, and development. As I alluded to earlier, the Android platform is a good choice if you want to quietly release your app, and make many rapid improvements to it as called for by the
+Lean Start-up methodology of Eric Ries. If you are not familiar with the Lean Start-up methodology, it is a very widely adapted theory on how to rapidly improve your product by getting market feedback, and iteratively improve your product. Android also has the most global users, which is quite a nice advantage of releasing your app there first.
+
+	What Android’s flexibility means for you is that you can release your app on GooglePlay, and then easily port that app to other Android-based app stores like the Kindle app store, the NOOK app store, and many other Android-based app stores in other countries. This can make for a bit of a management nightmare if you later have to make updates to all those apps, but you will be tapping into over a billion devices worldwide.
+
+	The Apple App Store, on the other hand, requires apps to be made only for it. Once you make a native iOS app, it can be sold only on the Apple platform for iPhones and iPads. You still get access to hundreds of millions of users, but the overall reach of Apple is now smaller than that of Android. Despite having a smaller reach, the iOS platform has a far higher number of affluent users who are willing to spend money on apps or in-app purchases. The amount of money spent per app user is
+far higher on iOS than on Android.
+
+	The Kindle platform is a good second option to reach US and European audiences with Android apps. The Kindle has a few interesting advantages. People who own a Kindle expect to pay for content on this device more readily than GooglePlay users because they expect to buy books for the Kindle. That is very different from other Android platforms where users go out of their way as much as possible to avoid paying. The other interesting thing about the Kindle is that you can sell books from
+your app as an affiliate. Since the Kindle platform is a very natural one for buying books, your conversion rate will be much higher for books than it would be on another Android platform like GooglePlay. The challenge with the Kindle is that its volume of devices and users is orders of magnitude lower than GooglePlay.
+
+	Since we just covered the Kindle app market, let's take a second to talk about Kindle's cousin, the NOOK device family from Barnes & Noble. While I am personally a fan of the NOOK platform, and have apps on it, it has been a beleaguered brand in the mobile app world with a very uncertain future. Despite me personally being a fan of the platform and wishing it the best, my advice would be to not invest in it by putting your apps on it unless you can port your apps very fast. The volume of
+downloads and the generated revenue will be very underwhelming for most apps. Plus, no one knows how long the NOOK platform will be around, and what will eventually become of it.
+
+	Lastly I want to add a few words about the Windows phone and even the Blackberry. They may seem like very different platforms, but in my opinion they share something very similar. In my opinion (and I could be wrong) they are both "too little and too late" to the game. Those platforms and their device install base are tiny compared to iOS and Android. Developing apps for those platforms has extra barriers associated with their unique technological platforms. The extra development
+barriers, low potential for distribution via those platforms, and the fact that they need to compete with some of the top companies in the world like Apple and Google, essentially spell doom for the Windows phone and the Blackberry. I personally don't recommend investing in your app growth on those platforms. Android App stores based in other countries can be a good option in a few cases. There are countries with very large populations like China and a few others, which have their own Android
+app stores. The challenge with those countries is that even though there are many potential users for your apps there, those users will on average be far less lucrative than users from economically strong countries like United States, Australia, Canada, UK, and the rest of Europe. Plus, many people in developing countries don't use mobile banking which means that even if they wanted to buy your in-app purchases, logistically, they can't. That means that a large part of the decision of whether
+to put your app on app stores in those countries depends on how your app makes money. If you make money from ads, despite generating much less revenue in economically poor countries, they will still generate a small trickle of revenue. If you make money with in-app purchases on the other hand, the drop in revenue will likely be far steeper.
+
+
+	Should You Develop Your Apps Natively? There is a debate in the mobile app world regarding whether app developers should develop their apps natively or use technologies that enable a single code base to be compiled into both, an iOS app and an Android app. There are a few technologies that enable developing for both an iOS and Android at the same time. Some popular examples of these so called frameworks are Appcelerator, Titanium, and PhoneGap.
+
+	The factors that go into the decision of developing mobile apps natively or using such frameworks are relatively straight forward. Android and iOS apps are different in their feel and usability. Creating 100% identical apps for both platforms doesn't make the best sense in many cases. Nevertheless, it is obviously much more expensive (in money, skilled labor, and time) to develop unique apps that are native to iOS and Android.
+
+	So if you are OK with your apps looking only 80-90% natural to the platforms they are on, using a framework that will take one code base and compile it into apps intended for multiple platforms may be a great way to go. This way you can easily also create a Blackberry app or whatever other platforms it is possible to compile your app into.
+
+	On the other hand, if you develop natively, it will be more possible to get to optimum usability and quality for each of the platforms on which you plan to distribute your app. To give an example case study, in the case of my apps, I decided to develop everything natively. That meant creating a whole new app for iOS and a whole new app on Android. I had to use different programming languages and different technologies that enabled those programming languages. That was difficult and it
+took a substantial amount of time because despite me having years of prior software development experience, there were many things I had to learn from scratch. But developing natively gave me one advantage that was key. I didn't need to make identical app updates to both apps at the same time. I sped ahead on Android with constant experiments to get the app to generate more money, get more users, and increase user engagement. Most of those experiments failed, but a few of those experiments
+worked. The experiments that worked ended up eventually making their way into my iOS apps. So despite having to do much more work, developing natively on each platform gave me flexibility in what I was able to do with the apps.
+
+	Overall in the mobile app industry, most companies that can afford it, develop their apps natively. Most of their app updates loosely mirror each other for iOS and Android, and they prefer having the flexibility to do what they want on each platform. Most companies also prefer being able to make each app look as close as possible to what it should be on any given platform. If you need to develop an app quickly, or simply don't have the resources (time and money) to develop natively, then
+using a framework like PhoneGap, Appcelerator or Titanium begins to make much more sense.
+
+
+	General Features To Add To Your App That Will Help It Grow And Make Money Let's have fun and brainstorm some potential features of your app, no matter what your app might be, which can help you get more downloads, make more money, get better reviews, and increase user engagement. Think about how the features covered below can be added to your app.
+
+	As I always allude to, if you can add some sort of chat where users either chat with you or each other, it will create a natural pull for users to get back into your app and to keep opening it. If you can engage with some of the users of your app, especially during the early stages of your app, they can explain to you what they like about your app and where your app falls short. There is nothing like getting real feedback from actual users. There is one key to success with this strategy.
+The things about which you chat with your users must be interesting or helpful to them in some way. If it isn't, the users won't bother to talk to anyone. The chat-based help or advice can become one of the paid features as demand grows. As an example, consider how cool it would be to get expert help on a dating app to help premium members create better profiles and attract more people.
+
+	In the theme of helping your users with something, if your app can educate your users about the topic they are interested in (not common for game apps, but often possible in other niches), you can add written or video content to your app. The benefit to this is twofold. The first benefit is that your users will appreciate your app more, and may possibly leave better reviews. The second benefit is that when your users engage with those educational materials, they are increasing the your
+app's average sessions and session lengths, which helps your app rank better in search. Plus, if you happen to create premium content regularly, that could be a subscription opportunity.
+
+	Another good feature to add to your app is something that would get your existing users to invite their friends to use some features of your app together. This can often work well for games because playing with friends is more fun. But this can work well almost no matter what kind of app you have. You can incentivize users to invite their friends in other ways by giving them access to extra features, credits, or anything else that isn't totally free in your app.
+
+	Just as you want to think about features that will make your app better when people use them with friends, you also want to come up with features that will be something your users will want to use on a daily basis. If the app can become a part of people's daily habits, they will be far more likely to warm up to the idea of spending money to buy premium features and tell their friends about your app. Think of what people do every day that may be natural for your app to help them with. If
+you come up with such a feature, it may be the “killer feature" that helps to skyrocket your app's engagement and ultimately search ranking, growth, and monetization.
+
+	If it doesn’t require too much extra work and development time, consider adding gamification features. Competing on points or status with other app users makes using the app fun and more addictive. Just don't necessarily make gamification a part of your initial features as you launch because at times, gamification features can be complex to create. If you make your app more complex to create, it will cost more and take longer to develop and launch, increasing the risk that it never
+actually gets launched.
+
+
+	What Kinds Of Apps Get An Investment? Almost all entrepreneurs, at one point or another during the life-cycle of their business, wonder about raising money for their business, and take some steps to get that money. For apps, the popular fundraising strategies have been crowdfunding, investors, and friends and family.
+
+	For now, let's focus on investors and understand what kinds of apps or businesses have potential to get an investment, and what kinds of apps don't. Before I start to get into details of what is possible and what is not possible, I want to say that every investor is obviously different. They are usually very smart business people, but they are still people. They can often be wrong. There have been many cases where one investor told an entrepreneur that they have a terrible business, and a
+different investor invested in that business, and the business went on to be a major success.
+
+	It is also possible that neither of those investors was wrong. Perhaps the investor who declined didn't like the risk-reward situation and the ladder investor was more risk tolerant, or liked the entrepreneur more than the business, and after much hard work they were able to create a great business out of the app that once didn't seem like it would be a great business at all.
+
+	Despite the unpredictability and variation of different kinds of apps and different kinds of investors, there are a few guidelines that investors like to use, and will likely use to evaluate your app. Pound for pound the thing investors prefer most is that your app targets a large (billion dollar plus) market. This ensures investors that your app can potentially grow into a business that can give them returns that are large enough to justify their risk. For this reason, investors seem to
+invest in what often appear to be similar kinds of apps: photo apps, dating apps, health apps, social apps, fashion apps, commerce apps, sometimes game apps, and a few other kinds of apps.
+
+	Game apps are a bit of a wildcard. Think about game apps. Some games are duds and some games are winners. Even great game development companies can't consistently produce great hits. The game industry is sometimes called "a hits industry" meaning that most money is made from games that become huge hits. But creating games that are hits is extremely difficult, and not something that game developers can easily predict. It is extremely difficult to predict game success. Even if a game seems
+to be successful, the popularity of many games quickly vanes, and there is no certainty that the developer of the game will ever create another hit. That adds unpredictability and extra risk to game development companies in the eyes of investors. Plus, if you are a single developer, it is incredibly difficult for you to compete with big game development studios in marketing and app quality. That makes it difficult to get traction for games, and lack of traction makes it difficult to get
+investors interested.
+
+	Another thing investors really like to see is high growth. Growth is important for all start-ups, but for apps it holds even more importance because for the most part, apps that win are apps that manage to become very well known and very widely downloaded. This can be understood by looking at the business models of successful apps. Most apps do not generate tremendous revenue on their own, and therefore do not become great businesses on their own. The great success for apps is to get
+acquired by a larger company. I realize that this is the case for most businesses, but for apps this dynamic is just more glaring.
+
+	To get acquired, apps need serious growth. When I say serious growth, what I have in mind is hundreds of thousand or millions of downloads and/or upwards of 10% month over month growth on a consistent basis. If you just got disappointed because your app can't boast that kind of growth just yet, or has not been launched yet, I am sorry to be the bearer of bad news. But with enough hard work and if you correctly implement the strategies in this book, I am sure you will get there. I hope you
+do, and I am rooting for you! When thinking about the potential of getting an investor, it is important to understand that investors aren't there for your sake. They are there to capitalize on your success or potential to succeed. If you have not launched your app yet, there are many apps out there that have launched, are growing rapidly, and are more compelling to investors at that moment. But if you work hard and achieve growth, you increase your chances to eventually get an investment.
+Just focus on growing your business without getting an investment if you don't immediately get an investment. Most businesses never get an investment, and it isn't something you can rely on or wait for. I never got an investment. I had to scratch and claw, and so do most entrepreneurs who eventually become successful.
+
+	Lastly, I want to mention another thing that investors look for before they decide to invest in an app or not. That factor is your team. Many investors frown on single-member start-ups, which many app companies are. In fact, my own app company is a single person company, and whenever I talked to investors about my apps, they immediately asked why I don't have co-founders and why I am not growing my team.
+
+	An ideal mobile app founding team, or any start-up team for that matter, is one in which the founders have successfully worked together in the past, have experience in the business niche in which the business is in, and have a balanced skill set.
+
+
+	Crowdfunding For Apps Since most mobile app entrepreneurs are unfortunately not able to raise money from investors (if you think about how many apps there are out there and how many have gotten an investment, far less than 0.1% of apps ever get an investment), one of the next best options is to raise money by getting donations via crowdfunding.
+
+	There are a number of crowdfunding sites out there like KickStarter.com, IndieGoGo.com or GoFundMe.com. Those are general crowdfunding sites for many kinds of projects, and you would be in relatively good shape trying to raise money via those platforms. But there is one crowdfunding site that focuses specifically on raising donations for mobile apps. That site is AppStori.com.
+
+	[Revision: AppStori.com has gone out of business since I originally wrote this book in early 2014. The latest revision is December 2015. I leave mention of it here as an example of just one of the businesses that found it challenging to succeed in the mobile app world.]
+
+	I realize that still not everyone knows exactly what crowdfunding really is so let me briefly explain this concept to you. Crowdfunding is a way to get donations online from strangers, friends, and family who believe in your project, or simply want to support you. You get many small donations from many people across the Internet by leveraging the gigantic scale of the Internet.
+
+	That might seem great, and it can be. But there are many caveats to crowdfunding. First of all, because this is essentially free money, entrepreneurs flock to this fundraising strategy creating an overly saturated environment. Due to the over-saturation of companies that are trying to get funding via crowdfunding, this has become far from the "free money" many people see it as.
+
+	For your crowdfunding campaign to do well, you can't just sit back and watch the cash come in. You must promote your crowdfunding page, and get your friends, family, business contacts and people who you reach with your marketing efforts to donate to your crowdfunding campaign. Arguably the worst part of it all is that on most of these crowdfunding platforms, you don't get any of the money you've raised unless you reach your stated goal which you declare in the beginning of your campaign.
+The reason for this is that the crowdfunding sites realize that you will just sit back and watch money come in unless you are afraid of not getting any of the money. If you are scared of not getting any of the money you've raised, you will be promoting your crowdfunding campaign with all of your might. And guess what, when you promote your campaign, you indirectly promote those crowdfunding sites because the campaigns are hosted on their sites, and they take a cut from the money you've
+raised. To sum up, you have three options when it comes to raising money for your app through crowdfunding. The first is to sit back and hope that people will just find your project and donate to it. This doesn't work unless you are able to somehow build momentum through your own efforts. Once projects get momentum within these crowdfunding sites, they tend to float up on the crowdfunding sites and naturally get more exposure. But you have to push for that. The second option is to ask your
+friends and family for donations. Frankly, my opinion is that in most cases, if you do that, you might as well bypass crowdfunding sites, and just ask people you know for money directly, saving yourself commission from those sites. Lastly, if you have access to a strong marketing channel where you know that you can reach many people, promote your fundraising campaign there, and hope that people will donate.
+
+
+	10 Fundraising Strategies This section is a quick summary of the ten fundraising strategies listed in my full fundraising book. For a full discussion of these fundraising ideas, consider getting my full fundraising course as one of my free gifts to you that I offer at the end of this book.
+
+	Let's quickly go over the possible strategies or ideas you can use to raise money for your apps. Keep in mind that these are strategies for general ways to raise money, and not specifically for apps. Investors - as we covered earlier, it is very difficult to raise money by getting an investment. For a full list of professional technology investors, explore angellist.com and see if any of the investors there invest in the kinds of apps that you are working on.
+
+	Donations via crowdfunding - as we covered earlier, this is a viable but difficult way to raise money. In most cases, to make it work, you will have to be the one who will have to reach out to many people asking for the donations.
+
+	Loans - while getting a loan isn't recommended because it is an extra risky strategy (potentially losing money you don't actually have), you can get a small loan (sometimes called a micro-loan) on sites like Lendio.com or Prosper.com or other micro-loan sites. Banks don’t usually give business loans to businesses which have not been started or businesses that have minimal revenue, so the micro-loan sites are the only viable option for idea-stage and early-stage businesses.
+
+	Grants - there are very few grants for apps specifically. Nevertheless, you can apply for local grants, minority grants, and any other grants for which you may be a fit. Explore grants.gov for a full list of possible grants. Getting part-time or full-time work - I realize that this does not seem appealing to entrepreneurs, but it is a great way to ensure that you can have money coming in, and putting some of that money towards your app. I encourage people to embrace this as an option
+because it is least risky in terms of getting at least some money in return for the efforts you put into your fundraising.
+
+	Generate revenue from your business - this is another “not so popular” suggestion, but it is one that works. If you can, try to explore possible revenue streams early on in the lifetime of your app. Monetizing your app can slow the growth of your app, but if you need money to sustain your business, this may be a very realistic option.
+
+	To be honest with you, tips 5 and 6 are what I used to raise money for my business.
+
+	Creative ways to raise money - consider putting on some fun events, fundraisers, or something with your local community to help you raise money towards your business. In my fundraising course I give an example of how I created an event series around one of the businesses I was trying to grow. The events helped me promote the business and generate revenue at the same time.
+
+	Raise money by selling to future customers - one very savvy strategy for some businesses is to approach future potential customers and try to sell them products or services for a very heavy discount in exchange for upfront payment that you can use to actually develop the product. This helps in many ways. It obviously generates revenue, but it also gives you practice selling your products, and helps you determine how excited your potential customers are about the product you are building.
+
+	Provide educational services, materials or workshops. My own business is a perfect example of this. I created courses, books, a YouTube channel, and a number of other educational materials which help my current app users, help new customers find my business by discovering that educational content, and generate revenue that I can put back into the business. Think about what educational materials you can create that make sense for your business niche, which you can sell to attract your
+potential customers and generate revenue at the same time.
+
+	Provide services online - if you need to generate cash, consider freelancing on sites like elance.com, fiverr.com, odesk.com, fancyhands.com, or any other freelance or concierge site.
+
+
+	Dive Into Mobile App Business Models Understanding mobile app business models a very powerful tool to help you during the planning stages of your mobile app to help you understand what kinds of apps may find success, and which will fail. It will also help you evaluate potential app features that you may consider adding to your app once your app is live. I can't overemphasize how important this is to the health of your app business, and I hope you agree with me as we cover mobile app
+business models. One caveat I want to add is that because there are so many different kinds of apps, I am not able to cover specifics of different kinds of apps, and at times I have to make sweeping statements and assumptions. Please bare with me through that, and try to consider how the general points I make relate to the specifics of your app.
+
+	Before delving into business models, let's first define what a business model is so that we are all on the same page, and are working from the same definition. Besides the many different accurate definitions of varying complexity for what a business model really is, this term is often used inaccurately, adding to the confusion.
+
+	Here, I'll try to present a simple but effective definition of a business model:
+
+	The business model is a bird's eye view of your entire business, and how your business functions. It is a way to step back and take a look at each and every component of your business individually, and evaluate how well each individual component of your business works on its own and together with the other components of your business. As you may guess, a business has many components, and things can quickly get quite complex. Luckily, mobile apps are relatively simple businesses to examine
+as a whole because many traditional components of a business simply don't exist for apps. When it comes to apps, there is no shipping, handling of inventory, no logistics, no manufacturing of physical goods, often no rent to pay, and there are typically fewer employees needed than most traditional businesses.
+
+	For that reason, when it comes to apps, we can simplify our understanding of what is a business model. Let's take another step back, and explore the three core components of any business, and let that be our business model evaluation for now. This way of looking at things will get us to 90% of where we need to be in terms of understanding our business model without many of the unnecessary details.
+
+	The three core components of any business model are: product, marketing and finances. Let's cover these in more detail. The first component of your business model is your product. Within this category, we should consider the resources it will take to create, maintain and continuously improve your app (this is your product), and what it would take for the product to be competitive in its business niche.
+
+	The second component of the business model is marketing. You must consider the type of app your company offers, and evaluate how you will promote that unique app. You must consider the natural marketing strategies for your app, and be able to estimate the kind of distribution potential your app has, and how attainable it is to reach the maximum potential with each of those natural marketing channels.
+
+	Lastly, you must tie all this together by evaluating the financial picture of creating your product, selling it at the right price and volume to cover your expenses, break even financially, and eventually reach your financial goals for your business.
+
+	Once you come up with a realistic plan which allows for the creation of a good product, ability to promote and sell that product, with all that being done profitably, you have a foundation for a winning business model. Now let's take a look at an average mobile app business model by looking at mobile app business models in this light. You may recognize that the biggest themes in creating a mobile app business is precisely the creation of the app, the promotion of the app, and the
+monetization of the app. W e have essentially been discussing the business model components all along, without explicitly stating so.
+
+	Let's start with the development of the app. If will be far cheaper to develop the app if you can build it on your own rather than having to hire someone. App development is the single biggest cost for just about all apps, and it substantially changes the financial dynamics of creating your app compared to if you can create the app on your own. If you can't develop the app on your own by having at least one software developer on your founding team (which could be you), your business model
+automatically becomes far weaker. This is a very serious issue to take into account and not gloss over.
+
+	Marketing of your app, which is the next part of your business model, is not as black and white. Recall how the bulk of downloads for most apps comes from apps store search, and the next sources of downloads come from social sharing and publicity. First, consider how social/viral your app realistically is, and how much big press coverage your app will be able to get. Next consider how well you will be able to rank for your most coveted search keywords in app store searches, and how much
+approximate volume of downloads those searches will generate. Everything mentioned in this paragraph is an educated guess during the planning phases of your app. Complete accuracy is not possible, but if you are realistic about the distribution potential for your app, you will come close to a reasonable estimate of the daily or monthly download potential for your app. At least you should do your best to come close to realistic numbers as possible.
+
+	Once you have an estimate for your app's download potential, the focus should shift to the monetization potential for your app. While it is difficult to cover monetization for every possible different app in this single paragraph, by and large, mobile app monetization tends to be poor because users don't like paying for apps or items within apps, and if you promote other things (ads or products) too aggressively within your apps, you will begin to have bad reviews which will work to
+undermine future downloads and monetization.
+
+	Now let's tie all of this together into a succinct view on mobile app business models. Since generally, monetization is poor, you often need a substantial number of downloads for your apps to break even or pay yourself and all the people working on your app a reasonable monthly salary. And since you can estimate your app's approximate download potential, consider whether downloads from search, social sharing, and publicity can amount to tens of thousands of monthly downloads, which is
+typically the minimum number of downloads you need for a free app to make sufficient money to begin covering your salary and the salaries of anyone else working on the app with you.
+
+	As you can see, things do not seem favorable largely because of poor app monetization even if you can generate tens of thousands of monthly downloads. Your app will begin to turn into a business only after you get hundreds of thousands of monthly downloads, or you figure out a very strong monetization strategy.
+
+	So what are the takeaways? To me they are clear. If you have a unique strategy to consistently generate tremendous monthly downloads, or a very strong monetization strategy that will monetize at a far better rate than an average app, the app idea seems worth pursuing. If you don't have such a strategy, it may be a sign that the business model for your app is not as strong as is necessitated by the current mobile app ecosystem.
+
+
+	Mobile App Exit Strategies We make our apps in order to achieve some kind of a goal, right? Some people want their apps to be the tools by which they become millionaires or billionaires. Other people just want to earn a comfortable living and generate passive income, and yet others simply want to achieve a career boost and some kind of technology- world notoriety. When you plan your app, you must set your goals for it. Sometimes these goals can be synonymous with the term exit strategy.
+In general, there are three kinds of exit strategies (common outcomes) for an app that can be considered successful. Let's cover them in some detail.
+
+	GETTING BOUGHT FOR A SIGNIFICANT AMOUNT OF MONEY
+
+	The first and most appealing exit strategy to most people is to sell their apps for a large sum of money to some larger company. I personally, would be very happy if a larger company contacted me, and wanted to buy my apps for millions of dollars. Unfortunately, it isn't that easy.
+
+	To achieve million dollar buyouts and notoriety, an app must generate tremendous scale. Tremendous scale here means millions or tens of millions of downloads or even more. With those kinds of numbers your app will stand out in the app stores, you will be able to get publicity, and potential larger companies who may eventually buy your app will learn about your app from your publicity and prominence in the app stores. The challenge is that to achieve that kind of scale, an app must be
+truly extraordinary, have a significant marketing budget, or do something very unique to grow. Apps that eventually get bought and have lucrative exits tend to have one thing in common. They catch on with the general public, and often become household names. This is a level of cultural penetration that is far beyond just dominating search or getting publicity. To achieve this, the app must be life altering or the word of mouth and social invites of the app must be absolutely through the roof.
+Without an extremely wide adoption, regular use, and incredible engagement, it is nearly impossible to achieve such a status.
+
+	SELL THE APP FOR JUST A FEW THOUSAND DOLLARS
+
+	If you launched your app, and are having a hard time growing it to incredible scale, you can sell the app to another mobile app entrepreneur. A website like flippa.com is a marketplace for apps that are currently for sale. You can either sell your apps or buy existing apps for a very affordable price. DON’T SELL YOUR APP AND CONTINUE TO GENERATE REVENUE FROM IT
+
+	If you find it impossible to generate tens of millions of downloads, and you don't like the price that you can get for your app on flippa.com, you can simply keep the app and have it generate revenue for you. How much revenue is up to the kind of app you have, the number of downloads you can generate, and other nuances specific to your app. For most apps, revenue isn't too big because as we covered before, mobile app users don't like to pay, and ads don't generate much revenue at all. But
+the good news is that you can have a steady income from an app for a long time without putting more effort into it.
+
+
+	iv. How To Get Featured In App Stores Many app entrepreneurs ask me about getting their apps featured in app stores. This is very difficult to achieve. My Android business planning app was once featured in the Google Play app store, and I still can't tell you what the exact formula is to guarantee being featured. I can only share my observations with you on what I think I did right for my apps, and what I've seen other apps do that I think increased their chances of getting featured.
+Let's cover some of these strategies.
+
+	First I'll give the case study of how my own app was featured since I had this experience first hand, and can share details. I wasn't told about this by the GooglePlay app store. One day I simply woke up and I had a spike in downloads by about 500 downloads per day. Surprisingly, this lasted for a few weeks (I would have thought that it would have been over sooner), and for some reason, most of the downloads came from England. Possibly my app was featured in additional ways there, but I
+had no way to confirm that since I was based in United States, and couldn't see what an app store users in England would see.
+
+	Since the app store didn't inform me of anything, I had to figure out why I was being featured. I tried to understand the reason for being featured, and the only reason that made sense to me was that a short time prior to being featured, I had added new app icons and improved my app landing page, which boosted my download totals by 15%. The increased download totals helped to boost my app's search rankings, which gave me an even bigger daily download boost. My conclusion was that the
+download boosts made my app stand out, and the app store editors noticed my app out of the many others, and decided to feature it because the app was already showing signals of being liked by people.
+
+	This kind of a pattern where boosts in downloads result in being featured is something I see frequently. There is no guarantee that a boost in downloads will get an app featured, but the apps that do get featured seem to have this in common in one way or another. When apps of my fellow entrepreneurs got featured in app stores, it was a similar story. First, the app had to be good enough to garner some sort of attention. Then their apps would get serious publicity or the app entrepreneurs
+had to generate spikes by paying for ads, or by taking advantage of app store search (like my app). Once that happened, strong spikes in downloads had very strong correlations with eventually getting the app noticed by app store editors, and getting featured.
+
+	I won't mention which apps I know that got featured because of what I will say about these apps now. Except for my apps (I am an independent developer), all these apps were build by wealthy companies that got millions of dollars in funding. With that kind of funding, many options open up that aren't too available to mere mortals. The companies that made these apps were able to buy publicity and get stories about them published in Mashable, Techcrunch, and even get television appearances.
+All of that obviously drove download numbers through the roof which got the notice of app store editors, and eventually got the app featured.
+
+	Additionally, because these wealthy app companies had investors, they often leveraged the relationships of their investors to be able to contact the app store editors themselves, and to be able to influence them directly. Unfortunately, few app developers have that opportunity, so we just have to be that much more scrappy and resourceful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Chapter 5: Common Types Of Apps And Strategies For Them
+
+	Game Apps Many mobile app developers dream of making the next cool game. In fact, many developers start developing in the first place because they want to make games. I am not a mobile game developer myself, but in my coaching practice I have worked with a number of mobile game developers. With each app, we consistently run into the same few issues, and I want to outline some of those challenges here so you are aware of them, and have a plan to get around them.
+
+	The first challenge for game apps is generating large numbers of downloads. As we covered earlier, the main drivers of downloads for most apps are app store search, publicity you may be able to get for your apps, and existing users inviting their friends to use your app. While there are many other strategies to promote apps, these are some of the top yielding strategies for most apps. Since app store search is so important, let's start by considering some nuances of app store search for
+game apps. The problem for most games is that there is a very limited number of keywords that games can rank for. Those keywords repeat across almost all game apps. Some examples of such keywords are: fun, run, jump, game, puzzle, animal, adventure, shooting, race, points, kids, etc. You can see how most games can try to rank for a number of these keywords. The problem, of course, is that there are tens of thousands or even hundreds of thousands of games that any new game app would have to
+compete with when it comes to those keywords. And the top search spots are already taken by very strong and popular apps that have large marketing budgets, access to press, and are often featured by the app stores. It is nearly impossible for new apps to compete with them in app store search.
+
+	Since app store search is obviously a very difficult option, the potential for social invites is also severely reduced because social sharing requires an initial install base of people who like your app and share it. Since it will be very difficult to get a large number of people to install your app from app store search, social sharing potential will also be limited.
+
+	To get publicity, your app has to be truly extraordinary. If this was year 2008 or 2010, it would be much easier to get publicity for apps. The problem is that new apps aren't exciting these days unless they are truly groundbreaking, have serious money or people behind them, or have a truly unique story that people either fall in love with, or is something that makes them curious.
+
+	To generate downloads, you can pay different app review sites, or explore other marketing channels. Chances are that paying for app downloads will happen at a loss, and the revenue from the app won't cover the marketing expenses. Other marketing channels, for the most part, require a lot of effort and bring only mediocre numbers of additional downloads.
+
+	If this feels depressing, it is. At least it is for me because I work with many people who face this kind of a situation often. I want them to succeed, but there is a limited number of solutions I can offer if the problems they come to me with are this challenging. So before you begin creating your game, try to come up with a unique or interesting enough story that will help your app stand out from the mass of existing apps out there. Being good isn't good enough these days when it comes
+to games. The game must be truly something special or something groundbreaking in some industry. Ask yourself whether people will truly love the app, and how you can get a cult following built around your app. Think of ways to make your game special, unique, and fun. The bar of quality and user expectation is very high.
+
+	Consider these issues during the business planning stages for your app rather than after the app has been developed. Thinking through solutions for the issues raised here before you start can save you a lot of money and headaches down the line.
+
+	Before moving on from game apps I want to suggest an intermediate to advanced ASO strategy that might help your game app rank in app stores. If your game is a puzzle game or a game where your keywords would be very competitive ones like run, shoot or jump, my advice is to try to find less competitive keywords to try to rank for first. At least this way you will get a trickle of downloads instead of none. Use that trickle of downloads to make your app stronger in app store search. Once
+your app becomes more competitive in search, you can slowly start to target more and more competitive search keywords. This is actually what I did for my business apps, just with business related keywords.
+
+
+	Social And Photo Apps We just went over how to promote game apps. Unfortunately, many of the same challenges come up when it comes to creating photo apps or social apps. I am grouping them together because these are the kinds of apps young entrepreneurs love to build, and spend time and money developing. They often come up with cool apps, but have an extremely difficult time generating downloads for their apps. And if you can't get customers for your business, that can destroy the entire
+business.
+
+	Just like for game apps it is extremely difficult to rank for terms like fun, run, shoot, adventure, and similar other terms, photo and social app entrepreneurs find it equally difficult to rank for terms like photos, social, and friends.
+
+	The same pep talk takes place when it comes to these apps as with game apps. If this was the year 2010, you would be able to get a great amount of downloads, but today such apps must be truly groundbreaking to get publicity and stand out.
+
+	One aspect of social and photo apps that is more difficult than game apps is monetization. Games have much more clear monetization patterns than social or photo apps do. Social and photo apps typically have to come up with some unique in-app purchase offers. The social or photo app entrepreneurs have to not only figure out how to get downloads (a big challenge), but they also have to experiment with monetization strategies to find one that converts users at a good rate.
+
+	I can give examples of other types of apps with similar issues, but I think at this point you are getting the idea. There are new apps in the app market every day, and new ways to discover apps aren't appearing nearly as fast as the progress of app saturation. It has been like that since 2008. At this point, realistically speaking, some niches are nearly impossible to compete in unless you have some preexisting large marketing channels or are willing to spend the time to create one. One
+app store strategy I recommend, and one that I have myself used with success is to find niches where you can either make a fantastic app, or that are only semi-competitive.
+
+	Another savvy app store ranking strategy can be to target search terms that are easy to rank for when your app is new. Those terms won't bring you many downloads, but at least they will bring you a small trickle of daily downloads. You can use those downloads to increase your app's strength in search by making sure that the social and engagement signals of your app are positive, and are better than the social and engagement signals of your competitors. And as your app slowly rises in the
+rankings and becomes stronger in search compared to your competitors, you can adjust your title and description to attempt ranking for increasingly more competitive keywords.
+
+
+	Dating Apps Dating apps are another popular kind of app that app entrepreneurs like to create. It is also an attractive kind of app for investors as well. But by now, you know me. I like to play devil's advocate, and point out the challenges for the app so that you can be aware of the challenges and have a plan to overcome them. If you can figure out how to get around the challenges during the planning phases of the app, you will be in far better shape than if you had to think about how
+to get around those challenges after meeting those challenges head on after you've started.
+
+	As you may already guess, with dating apps, just like with game apps or social apps, ranking in app store search is one of the biggest difficulties. Monetization is also very challenging because more and more dating apps and websites are free. Unfortunately, I don't have a solution for you for these challenges. What is even worse is that I actually have an additional challenge. For dating apps and websites to be effective, you must have what is called critical mass where enough potential
+daters are using your app at the same time within the same geographic area to ensure that they meet enough potential mates. Imagine what happens when one potential dater begins using your app. They immediately begin searching for potential mates in their local area. There must be no shortage of potential daters because a person needs to see many people before they like someone and contacts them. Considering how picky people are with whom they choose to date, you must have geographic areas
+very saturated with users in order to achieve a critical mass.
+
+
+

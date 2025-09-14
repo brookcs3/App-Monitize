@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waveform Animations - SwiftUI Recreation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(to bottom, rgb(7, 10, 19), rgb(8, 14, 26));
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 0;
+            width: 400px;
+        }
+
+        .glass-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-content {
+            padding: 16px;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(0, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .app-info h1 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .app-info p {
+            margin: 2px 0 0 0;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* WaveformIconAnimated - matches LiquidGlass.swift */
+        .waveform-icon {
+            width: 24px;
+            height: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }
+
+        .waveform-icon .bar {
+            width: 1px;
+            background: rgba(0, 255, 255, 0.85);
+            border-radius: 0.5px;
+            transform-origin: center;
+        }
+
+        /* WaveGlyphAnimated - matches ContentView.swift */
+        .wave-glyph {
+            width: 20px;
+            height: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }
+
+        .wave-glyph .bar {
+            width: 1px;
+            background: rgb(0, 255, 255);
+            border-radius: 0.5px;
+            transform-origin: center;
+        }
+
+        .title {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .animation-demo {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .animation-demo h3 {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SwiftUI Waveform Animations - Web Recreation</h1>
+        
+        <!-- Glass Card with WaveformIconAnimated -->
+        <div class="glass-card">
+            <div class="glass-header">
+                <div class="waveform-icon" id="waveformIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <span class="title">Transcribe</span>
+            </div>
+            <div class="glass-content">
+                <p>This matches the WaveformIconAnimated in LiquidGlass.swift</p>
+                <p>Settings: speed: 6.0, amp: 0.6</p>
+            </div>
+        </div>
+
+        <!-- App Header with WaveGlyphAnimated -->
+        <div class="app-header">
+            <div class="app-icon">
+                <div class="wave-glyph" id="waveGlyph">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="app-info">
+                <h1>Scriber</h1>
+                <p>Offline transcription, beautifully simple.</p>
+            </div>
+        </div>
+
+        <!-- Side by Side Comparison -->
+        <div class="comparison">
+            <div class="animation-demo">
+                <h3>WaveformIconAnimated</h3>
+                <p>From LiquidGlass.swift (lines 11-42)</p>
+                <div class="waveform-icon" id="waveformDemo">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            
+            <div class="animation-demo">
+                <h3>WaveGlyphAnimated</h3>
+                <p>From ContentView.swift (lines 44-74)</p>
+                <div class="wave-glyph" id="waveDemo">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Exact pattern from SwiftUI code
+        const pattern = [0.25, 0.65, 0.95, 0.55, 0.85, 0.75, 0.10];
+        
+        function animateWaveform(containerId, speed = 6.0, amp = 0.6, color = 'rgba(0, 255, 255, 0.85)') {
+            const container = document.getElementById(containerId);
+            const bars = container.querySelectorAll('.bar');
+            const containerHeight = container.offsetHeight;
+            
+            function animate() {
+                const t = Date.now() / 1000 * speed; // Convert to seconds and apply speed
+                
+                bars.forEach((bar, i) => {
+                    // Match SwiftUI logic exactly
+                    const baseH = Math.max(2, pattern[i] * containerHeight);
+                    const scale = 1.0 + amp * Math.sin(t + i * 1.6);
+                    
+                    bar.style.height = `${baseH}px`;
+                    bar.style.transform = `scaleY(${scale})`;
+                    bar.style.background = color;
+                });
+                
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
+        }
+        
+        // Start animations with exact SwiftUI parameters
+        animateWaveform('waveformIcon', 6.0, 0.6, 'rgba(0, 255, 255, 0.85)');  // LiquidGlass version
+        animateWaveform('waveGlyph', 6.0, 0.6, 'rgb(0, 255, 255)');            // ContentView version  
+        animateWaveform('waveformDemo', 6.0, 0.6, 'rgba(0, 255, 255, 0.85)');  
+        animateWaveform('waveDemo', 6.0, 0.2, 'rgb(0, 255, 255)');             // ContentView uses amp: 0.2
+    </script>
+</body>
+</html>

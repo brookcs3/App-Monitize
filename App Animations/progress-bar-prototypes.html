@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orb Progress with Power-On/Fade-Out Effects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(to bottom, rgb(7, 10, 19), rgb(8, 14, 26));
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: #00ffff;
+        }
+
+        .progress-demo {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .orb-progress {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 20px 0;
+            flex-wrap: nowrap;
+            overflow: hidden;
+        }
+
+        .orb {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            opacity: 0.1;
+            transform: scale(0.8);
+        }
+
+        .orb.power-on {
+            background: #00ffff;
+            box-shadow: 0 0 15px #00ffff, 0 0 25px rgba(0, 255, 255, 0.5);
+            opacity: 0.4;
+            transform: scale(1.1);
+            animation: powerOnFlicker 0.8s ease-in-out;
+        }
+
+        .orb.steady {
+            background: #00ffff;
+            box-shadow: 0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.4);
+            opacity: 0.3;
+            transform: scale(1.0);
+            transition: all 0.2s ease;
+        }
+
+        .orb.fading {
+            background: rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+            opacity: 0.25;
+            transform: scale(0.9);
+            transition: all 2s ease-out;
+        }
+
+        .orb.off {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: none;
+            opacity: 0.1;
+            transform: scale(0.8);
+            transition: all 1.5s ease-out;
+        }
+
+        .orb.idle-glow {
+            background: rgba(0, 255, 255, 0.20);
+            box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+            opacity: 0.20;
+            transform: scale(0.85);
+            animation: advancedIdlePulse 4s ease-in-out infinite;
+        }
+
+        .orb.processing {
+            background: rgba(0, 255, 255, 0.4);
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+            opacity: 0.35;
+            transform: scale(0.9);
+            animation: advancedProcessingPulse 2s ease-in-out infinite;
+        }
+
+        .orb.progress-active {
+            background: #00ffff;
+            box-shadow: 0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.6);
+            opacity: 1.0;
+            transform: scale(1.0);
+            transition: all 0.2s ease;
+        }
+
+        .orb.progress-boost {
+            background: rgba(0, 255, 255, 0.6);
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+            opacity: 0.45;
+            transform: scale(0.95);
+            animation: advancedBoostPulse 1.8s ease-in-out infinite;
+        }
+
+        @keyframes powerOnFlicker {
+            0% { 
+                opacity: 0.3; 
+                box-shadow: none;
+                transform: scale(0.8);
+            }
+            20% { 
+                opacity: 1; 
+                box-shadow: 0 0 8px #00ffff;
+                transform: scale(1.05);
+            }
+            40% { 
+                opacity: 0.7; 
+                box-shadow: 0 0 5px #00ffff;
+                transform: scale(0.95);
+            }
+            60% { 
+                opacity: 1; 
+                box-shadow: 0 0 12px #00ffff;
+                transform: scale(1.1);
+            }
+            80% { 
+                opacity: 0.9; 
+                box-shadow: 0 0 10px #00ffff;
+                transform: scale(1.0);
+            }
+            100% { 
+                opacity: 1; 
+                box-shadow: 0 0 15px #00ffff, 0 0 25px rgba(0, 255, 255, 0.5);
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes testyBulbFlicker {
+            0% { 
+                opacity: 0.3; 
+                box-shadow: none;
+                transform: scale(0.8);
+            }
+            15% { 
+                opacity: 1; 
+                box-shadow: 0 0 8px #00ffff;
+                transform: scale(1.05);
+            }
+            25% { 
+                opacity: 0.2; 
+                box-shadow: none;
+                transform: scale(0.8);
+            }
+            35% { 
+                opacity: 0.9; 
+                box-shadow: 0 0 6px #00ffff;
+                transform: scale(1.0);
+            }
+            45% { 
+                opacity: 0.1; 
+                box-shadow: none;
+                transform: scale(0.85);
+            }
+            55% { 
+                opacity: 1; 
+                box-shadow: 0 0 10px #00ffff;
+                transform: scale(1.05);
+            }
+            65% { 
+                opacity: 0.8; 
+                box-shadow: 0 0 5px #00ffff;
+                transform: scale(0.95);
+            }
+            75% { 
+                opacity: 1; 
+                box-shadow: 0 0 12px #00ffff;
+                transform: scale(1.1);
+            }
+            85% { 
+                opacity: 0.9; 
+                box-shadow: 0 0 8px #00ffff;
+                transform: scale(1.0);
+            }
+            100% { 
+                opacity: 1; 
+                box-shadow: 0 0 15px #00ffff, 0 0 25px rgba(0, 255, 255, 0.5);
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes advancedIdlePulse {
+            0% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            25% { 
+                opacity: 0.20;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+                transform: scale(0.88);
+            }
+            50% { 
+                opacity: 0.24;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+                transform: scale(0.91);
+            }
+            75% { 
+                opacity: 0.22;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.28);
+                transform: scale(0.89);
+            }
+            100% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+        }
+
+        /* Living idle animations - random rushes and organic movements */
+        @keyframes idleLivingRush1 {
+            0%, 98% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            15% { 
+                opacity: 0.45;
+                box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+                transform: scale(1.05);
+            }
+            30% { 
+                opacity: 0.25;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+                transform: scale(0.88);
+            }
+        }
+
+        @keyframes idleLivingRush2 {
+            0%, 96% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            8% { 
+                opacity: 0.35;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.3);
+                transform: scale(0.95);
+            }
+            22% { 
+                opacity: 0.50;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.45);
+                transform: scale(1.08);
+            }
+            35% { 
+                opacity: 0.28;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.25);
+                transform: scale(0.9);
+            }
+        }
+
+        @keyframes idleLivingRush3 {
+            0%, 94% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            12% { 
+                opacity: 0.42;
+                box-shadow: 0 0 7px rgba(0, 255, 255, 0.35);
+                transform: scale(1.0);
+            }
+            18% { 
+                opacity: 0.38;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.32);
+                transform: scale(0.98);
+            }
+            28% { 
+                opacity: 0.55;
+                box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+                transform: scale(1.12);
+            }
+            40% { 
+                opacity: 0.30;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.28);
+                transform: scale(0.92);
+            }
+        }
+
+        @keyframes idleLivingShimmer {
+            0%, 90% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            25% { 
+                opacity: 0.32;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), 0 0 8px rgba(255, 255, 255, 0.1);
+                transform: scale(0.92);
+            }
+            45% { 
+                opacity: 0.28;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+                transform: scale(0.88);
+            }
+            65% { 
+                opacity: 0.38;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.35), 0 0 10px rgba(255, 255, 255, 0.08);
+                transform: scale(0.96);
+            }
+        }
+
+        /* T-1000 Liquid Metal Scan Animations - traveling ripple bands */
+        @keyframes t1000ScanLeftToRight {
+            0%, 95% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            8% { 
+                opacity: 0.26;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.3), 0 0 4px rgba(255, 255, 255, 0.15);
+                transform: scale(0.90);
+            }
+            15% { 
+                opacity: 0.30;
+                box-shadow: 0 0 8px rgba(0, 255, 255, 0.35), 0 0 6px rgba(255, 255, 255, 0.2);
+                transform: scale(0.94);
+            }
+            22% { 
+                opacity: 0.28;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.3), 0 0 4px rgba(255, 255, 255, 0.12);
+                transform: scale(0.88);
+            }
+            30% { 
+                opacity: 0.18;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.22);
+                transform: scale(0.86);
+            }
+        }
+
+        @keyframes t1000ScanRightToLeft {
+            0%, 96% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            6% { 
+                opacity: 0.22;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.25);
+                transform: scale(0.87);
+            }
+            12% { 
+                opacity: 0.29;
+                box-shadow: 0 0 7px rgba(0, 255, 255, 0.32), 0 0 5px rgba(255, 255, 255, 0.18);
+                transform: scale(0.92);
+            }
+            18% { 
+                opacity: 0.31;
+                box-shadow: 0 0 9px rgba(0, 255, 255, 0.36), 0 0 7px rgba(255, 255, 255, 0.22);
+                transform: scale(0.96);
+            }
+            25% { 
+                opacity: 0.27;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.28), 0 0 4px rgba(255, 255, 255, 0.14);
+                transform: scale(0.89);
+            }
+            35% { 
+                opacity: 0.19;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.23);
+                transform: scale(0.86);
+            }
+        }
+
+        @keyframes t1000DoubleScan {
+            0%, 94% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            10% { 
+                opacity: 0.24;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.28);
+                transform: scale(0.88);
+            }
+            18% { 
+                opacity: 0.30;
+                box-shadow: 0 0 8px rgba(0, 255, 255, 0.34), 0 0 5px rgba(255, 255, 255, 0.16);
+                transform: scale(0.93);
+            }
+            26% { 
+                opacity: 0.20;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.24);
+                transform: scale(0.87);
+            }
+            34% { 
+                opacity: 0.28;
+                box-shadow: 0 0 7px rgba(0, 255, 255, 0.32), 0 0 4px rgba(255, 255, 255, 0.14);
+                transform: scale(0.91);
+            }
+            42% { 
+                opacity: 0.25;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.27);
+                transform: scale(0.88);
+            }
+            50% { 
+                opacity: 0.18;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.21);
+                transform: scale(0.85);
+            }
+        }
+
+        @keyframes t1000GlitchyScan {
+            0%, 92% { 
+                opacity: 0.16;
+                box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+                transform: scale(0.85);
+            }
+            5% { 
+                opacity: 0.28;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.12);
+                transform: scale(0.89);
+            }
+            8% { 
+                opacity: 0.18;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.22);
+                transform: scale(0.86);
+            }
+            14% { 
+                opacity: 0.31;
+                box-shadow: 0 0 9px rgba(0, 255, 255, 0.36), 0 0 6px rgba(255, 255, 255, 0.20);
+                transform: scale(0.95);
+            }
+            19% { 
+                opacity: 0.22;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.25);
+                transform: scale(0.87);
+            }
+            25% { 
+                opacity: 0.29;
+                box-shadow: 0 0 7px rgba(0, 255, 255, 0.33), 0 0 4px rgba(255, 255, 255, 0.15);
+                transform: scale(0.92);
+            }
+            32% { 
+                opacity: 0.19;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.23);
+                transform: scale(0.86);
+            }
+        }
+
+        @keyframes advancedProcessingPulse {
+            0% { 
+                opacity: 0.28;
+                box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+                transform: scale(0.88);
+            }
+            30% { 
+                opacity: 0.35;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.35);
+                transform: scale(0.92);
+            }
+            60% { 
+                opacity: 0.42;
+                box-shadow: 0 0 7px rgba(0, 255, 255, 0.4);
+                transform: scale(0.94);
+            }
+            100% { 
+                opacity: 0.30;
+                box-shadow: 0 0 5px rgba(0, 255, 255, 0.28);
+                transform: scale(0.89);
+            }
+        }
+
+        @keyframes advancedBoostPulse {
+            0% { 
+                opacity: 0.38;
+                box-shadow: 0 0 6px rgba(0, 255, 255, 0.35);
+                transform: scale(0.92);
+            }
+            20% { 
+                opacity: 0.42;
+                box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+                transform: scale(0.95);
+            }
+            40% { 
+                opacity: 0.47;
+                box-shadow: 0 0 9px rgba(0, 255, 255, 0.45);
+                transform: scale(0.97);
+            }
+            60% { 
+                opacity: 0.50;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.48);
+                transform: scale(0.98);
+            }
+            80% { 
+                opacity: 0.45;
+                box-shadow: 0 0 8px rgba(0, 255, 255, 0.42);
+                transform: scale(0.96);
+            }
+            100% { 
+                opacity: 0.40;
+                box-shadow: 0 0 7px rgba(0, 255, 255, 0.38);
+                transform: scale(0.93);
+            }
+        }
+
+        @keyframes progressRush {
+            0% { 
+                background: rgba(0, 255, 255, 0.7);
+                box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+                opacity: 0.8;
+                transform: scale(0.95);
+            }
+            100% { 
+                background: #00ffff;
+                box-shadow: 0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.4);
+                opacity: 1;
+                transform: scale(1.0);
+            }
+        }
+
+        .orb.testy-bulb {
+            animation: testyBulbFlicker 1.5s ease-in-out;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .controls button {
+            background: rgba(0, 255, 255, 0.2);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            color: #00ffff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .controls button:hover {
+            background: rgba(0, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+        }
+
+        .status {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+
+        .phase-indicator {
+            color: rgba(0, 255, 255, 0.7);
+            font-size: 14px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transcription Orb Progress</h1>
+        
+        <div class="progress-demo">
+            <div class="status" id="statusText">Ready to transcribe</div>
+            <div class="phase-indicator" id="phaseText">Orbs glow softly, waiting for transcription</div>
+            
+            <div class="orb-progress" id="orbProgress">
+                <!-- Orbs will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="startFullAnimation()">Long Transcription (8s)</button>
+            <button onclick="quickTranscription()">Quick Transcription (3s)</button>
+            <button onclick="testProgressRush()">Test Progress Rush</button>
+            <button onclick="testBoostGlow()">Test Boost Glow</button>
+            <button onclick="resetToIdle()">Reset to Idle</button>
+        </div>
+    </div>
+
+    <script>
+        let totalOrbs = 45;
+        let currentPhase = 'idle';
+        let orbElements = [];
+
+        // Calculate responsive orb count based on container width
+        function calculateOrbCount() {
+            const container = document.getElementById('orbProgress');
+            const containerWidth = container.offsetWidth;
+            const orbWidth = 12; // orb size
+            const gapWidth = 8; // gap between orbs
+            const padding = 40; // container padding
+            
+            const availableWidth = containerWidth - padding;
+            const orbWithGap = orbWidth + gapWidth;
+            const maxOrbs = Math.floor(availableWidth / orbWithGap);
+            
+            // Minimum 15 orbs, maximum 60
+            totalOrbs = Math.max(15, Math.min(maxOrbs, 60));
+            console.log(`Container width: ${containerWidth}px, Total orbs: ${totalOrbs}`);
+        }
+
+        // Initialize orbs - start with idle glow immediately
+        function initializeOrbs() {
+            calculateOrbCount();
+            
+            const container = document.getElementById('orbProgress');
+            container.innerHTML = '';
+            orbElements = [];
+
+            for (let i = 0; i < totalOrbs; i++) {
+                const orb = document.createElement('div');
+                orb.className = 'orb idle-glow'; // Start with idle glow
+                container.appendChild(orb);
+                orbElements.push(orb);
+            }
+        }
+
+        // Set all orbs to idle glow state with living animations
+        function setIdleGlow() {
+            orbElements.forEach((orb, index) => {
+                orb.className = 'orb idle-glow';
+                
+                // Add living idle animations to random orbs
+                const shouldAnimate = Math.random() < 0.7; // 70% chance to get a living animation
+                
+                if (shouldAnimate) {
+                    // Pick random animation type
+                    const animations = ['idleLivingRush1', 'idleLivingRush2', 'idleLivingRush3', 'idleLivingShimmer'];
+                    const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+                    
+                    // Random delay between 2-15 seconds before starting
+                    const randomDelay = 2000 + Math.random() * 13000;
+                    
+                    // Random duration between 8-25 seconds (slow and organic)
+                    const randomDuration = 8 + Math.random() * 17;
+                    
+                    setTimeout(() => {
+                        if (currentPhase === 'idle') { // Only animate if still in idle phase
+                            orb.style.animation = `advancedIdlePulse 4s ease-in-out infinite, ${randomAnimation} ${randomDuration}s ease-in-out infinite`;
+                            
+                            // Schedule next living animation after this one completes
+                            setTimeout(() => {
+                                scheduleNextLivingAnimation(orb, index);
+                            }, randomDuration * 1000);
+                        }
+                    }, randomDelay);
+                }
+            });
+            
+            // Start T-1000 scanning patterns 
+            startT1000Scans();
+        }
+        
+        // Recursively schedule living animations for an orb
+        function scheduleNextLivingAnimation(orb, index) {
+            if (currentPhase !== 'idle') return; // Don't animate if not idle
+            
+            const animations = ['idleLivingRush1', 'idleLivingRush2', 'idleLivingRush3', 'idleLivingShimmer'];
+            const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
+            
+            // Random gap between animations (10-45 seconds)
+            const randomGap = 4000 + Math.random() * 21000;
+            const randomDuration = 8 + Math.random() * 17;
+            
+            setTimeout(() => {
+                if (currentPhase === 'idle') {
+                    orb.style.animation = `advancedIdlePulse 4s ease-in-out infinite, ${randomAnimation} ${randomDuration}s ease-in-out infinite`;
+                    
+                    // Schedule the next one
+                    setTimeout(() => {
+                        scheduleNextLivingAnimation(orb, index);
+                    }, randomDuration * 1000);
+                }
+            }, randomGap);
+        }
+
+        // T-1000 Liquid Metal Scan System - traveling ripple bands
+        function startT1000Scans() {
+            // Schedule the first scan after a random delay
+            scheduleT1000Scan();
+        }
+
+        function scheduleT1000Scan() {
+            if (currentPhase !== 'idle') return; // Only scan during idle
+            
+            // Random gap between scans (15-60 seconds) - like the T-1000 "thinking"
+            const scanDelay = 7000 + Math.random() * 15000;
+            
+            setTimeout(() => {
+                if (currentPhase === 'idle') {
+                    performT1000Scan();
+                    // Schedule next scan
+                    scheduleT1000Scan();
+                }
+            }, scanDelay);
+        }
+
+        async function performT1000Scan() {
+            if (currentPhase !== 'idle') return;
+            
+            // Pick random scan type
+            const scanTypes = ['leftToRight', 'rightToLeft', 'doubleWave', 'glitchyScan'];
+            const scanType = scanTypes[Math.floor(Math.random() * scanTypes.length)];
+            
+            switch (scanType) {
+                case 'leftToRight':
+                    await liquidScanLeftToRight();
+                    break;
+                case 'rightToLeft':
+                    await liquidScanRightToLeft();
+                    break;
+                case 'doubleWave':
+                    await liquidDoubleScan();
+                    break;
+                case 'glitchyScan':
+                    await liquidGlitchyScan();
+                    break;
+            }
+        }
+
+        // T-1000 scan implementations
+        async function liquidScanLeftToRight() {
+            const scanAnimations = ['t1000ScanLeftToRight'];
+            const baseDelay = 150; // Ripple speed
+            
+            for (let i = 0; i < totalOrbs; i++) {
+                if (currentPhase !== 'idle') return;
+                
+                const orb = orbElements[i];
+                const currentAnimation = orb.style.animation;
+                
+                // Add T-1000 scan animation on top of existing
+                orb.style.animation = `${currentAnimation}, t1000ScanLeftToRight 3s ease-in-out`;
+                
+                // Clean up scan animation after it finishes
+                setTimeout(() => {
+                    if (currentPhase === 'idle') {
+                        orb.style.animation = currentAnimation; // Restore original
+                    }
+                }, 3000);
+                
+                await sleep(baseDelay + Math.random() * 10); // Slight randomization
+            }
+        }
+
+        async function liquidScanRightToLeft() {
+            const baseDelay = 140;
+            
+            for (let i = totalOrbs - 1; i >= 0; i--) {
+                if (currentPhase !== 'idle') return;
+                
+                const orb = orbElements[i];
+                const currentAnimation = orb.style.animation;
+                
+                orb.style.animation = `${currentAnimation}, t1000ScanRightToLeft 3.2s ease-in-out`;
+                
+                setTimeout(() => {
+                    if (currentPhase === 'idle') {
+                        orb.style.animation = currentAnimation;
+                    }
+                }, 3200);
+                
+                await sleep(baseDelay + Math.random() * 10);
+            }
+        }
+
+        async function liquidDoubleScan() {
+            const baseDelay = 40;
+            
+            // First wave
+            for (let i = 0; i < totalOrbs; i += 2) {
+                if (currentPhase !== 'idle') return;
+                
+                const orb = orbElements[i];
+                const currentAnimation = orb.style.animation;
+                
+                orb.style.animation = `${currentAnimation}, t1000DoubleScan 4s ease-in-out`;
+                
+                setTimeout(() => {
+                    if (currentPhase === 'idle') {
+                        orb.style.animation = currentAnimation;
+                    }
+                }, 500);
+            }
+            
+            await sleep(300); // Slight gap
+            
+            // Second wave
+            for (let i = 1; i < totalOrbs; i += 2) {
+                if (currentPhase !== 'idle') return;
+                
+                const orb = orbElements[i];
+                const currentAnimation = orb.style.animation;
+                
+                orb.style.animation = `${currentAnimation}, t1000DoubleScan 4s ease-in-out`;
+                
+                setTimeout(() => {
+                    if (currentPhase === 'idle') {
+                        orb.style.animation = currentAnimation;
+                    }
+                }, 2000);
+                
+                await sleep(baseDelay);
+            }
+        }
+
+        async function liquidGlitchyScan() {
+            // Random orbs in glitchy pattern - like damaged T-1000
+            const selectedOrbs = [];
+            const numScans = 8 + Math.floor(Math.random() * 12); // 8-20 orbs
+            
+            for (let i = 0; i < numScans; i++) {
+                const randomIndex = Math.floor(Math.random() * totalOrbs);
+                if (!selectedOrbs.includes(randomIndex)) {
+                    selectedOrbs.push(randomIndex);
+                }
+            }
+            
+            selectedOrbs.sort((a, b) => a - b); // Sort by position
+            
+            for (const index of selectedOrbs) {
+                if (currentPhase !== 'idle') return;
+                
+                const orb = orbElements[index];
+                const currentAnimation = orb.style.animation;
+                
+                orb.style.animation = `${currentAnimation}, t1000GlitchyScan 3.5s ease-in-out`;
+                
+                setTimeout(() => {
+                    if (currentPhase === 'idle') {
+                        orb.style.animation = currentAnimation;
+                    }
+                }, 3500);
+                
+                await sleep(80 + Math.random() * 120); // Irregular timing
+            }
+        }
+
+        // Set all orbs to processing state with staggered transition and micro rushes
+        function setProcessingGlow() {
+            orbElements.forEach((orb, index) => {
+                setTimeout(() => {
+                    orb.className = 'orb processing';
+                    // Clear custom living animations and reset to processing animation
+                    orb.style.animation = '';
+                    orb.style.animationDelay = `${(index % 7) * 0.2}s`;
+                    
+                    // Little activation rush when transitioning to processing
+                    orb.style.transform = 'scale(1.05)';
+                    orb.style.boxShadow = '0 0 8px rgba(0, 255, 255, 0.7)';
+                    setTimeout(() => {
+                        orb.style.transform = 'scale(0.9)';
+                        orb.style.boxShadow = '';
+                    }, 200);
+                }, index * 15); // 15ms stagger across all orbs
+            });
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (currentPhase === 'idle') {
+                initializeOrbs();
+            }
+        });
+
+        // Advanced progress rush with wave effects
+        async function progressRush(duration = 1000) {
+            const baseDelay = duration / totalOrbs;
+            
+            for (let i = 0; i < totalOrbs; i++) {
+                // Create wave-like timing variations
+                const waveOffset = Math.sin(i * 0.3) * 0.3;
+                const staggeredDelay = baseDelay + (baseDelay * waveOffset);
+                
+                // Activate orb with wave animation and individual rush effect
+                orbElements[i].className = 'orb progress-active';
+                orbElements[i].style.animation = `progressRush 0.4s ease-out`;
+                orbElements[i].style.animationDelay = `${waveOffset * 0.1}s`;
+                
+                // Individual orb "pop" effect
+                orbElements[i].style.transform = 'scale(1.3)';
+                setTimeout(() => {
+                    orbElements[i].style.transform = 'scale(1.0)';
+                }, 120);
+                
+                // Little rush glow effect
+                orbElements[i].style.boxShadow = '0 0 18px #00ffff, 0 0 30px rgba(0, 255, 255, 0.8)';
+                setTimeout(() => {
+                    orbElements[i].style.boxShadow = '0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.6)';
+                }, 180);
+                
+                // Create trailing glow effect on previous orbs
+                if (i > 0) {
+                    const prevOrb = orbElements[i - 1];
+                    prevOrb.style.boxShadow = '0 0 15px rgba(0, 255, 255, 0.8)';
+                    setTimeout(() => {
+                        prevOrb.style.boxShadow = '0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.6)';
+                    }, 200);
+                }
+                
+                // Reset animation properties
+                setTimeout(() => {
+                    orbElements[i].style.animation = '';
+                    orbElements[i].style.animationDelay = '';
+                }, 500);
+                
+                await sleep(Math.max(10, staggeredDelay));
+            }
+            
+            // Final wave pulse across all orbs
+            setTimeout(() => {
+                orbElements.forEach((orb, index) => {
+                    setTimeout(() => {
+                        orb.style.transform = 'scale(1.1)';
+                        setTimeout(() => {
+                            orb.style.transform = 'scale(1.0)';
+                        }, 100);
+                    }, index * 8);
+                });
+            }, 100);
+        }
+
+        // Boost effect with advanced wave synchronization
+        function setBoostGlow() {
+            orbElements.forEach((orb, index) => {
+                setTimeout(() => {
+                    orb.className = 'orb progress-boost';
+                    // Clear custom living animations and reset to boost animation
+                    orb.style.animation = '';
+                    // Create traveling wave effect in sync patterns
+                    const wavePhase = Math.sin(index * 0.4) * 0.3;
+                    orb.style.animationDelay = `${wavePhase}s`;
+                }, index * 20); // Slightly slower transition for boost
+            });
+        }
+
+        // Advanced fade out with wave patterns
+        async function fadeOutProgress() {
+            // First pass: backwards wave from right to left
+            for (let i = totalOrbs - 1; i >= 0; i--) {
+                orbElements[i].className = 'orb processing';
+                
+                // Add ripple effect to surrounding orbs
+                if (i < totalOrbs - 2) {
+                    const nextOrb = orbElements[i + 1];
+                    nextOrb.style.transform = 'scale(0.88)';
+                    setTimeout(() => {
+                        nextOrb.style.transform = 'scale(0.9)';
+                    }, 150);
+                }
+                
+                await sleep(35); // Quick succession with slight variation
+            }
+            
+            // Second pass: transition to idle with organic timing
+            await sleep(400);
+            orbElements.forEach((orb, index) => {
+                const organicDelay = Math.sin(index * 0.2) * 100 + (index * 8);
+                setTimeout(() => {
+                    orb.className = 'orb idle-glow';
+                    // Reset any inline styles
+                    orb.style.animationDelay = `${(index % 9) * 0.3}s`;
+                    orb.style.transform = '';
+                    orb.style.boxShadow = '';
+                }, organicDelay);
+            });
+        }
+
+        // Fade out effect like power being slowly removed
+        async function fadeOutEffect() {
+            document.getElementById('phaseText').textContent = 'Powering down...';
+            
+            // Start fading from the end backwards
+            for (let i = totalOrbs - 1; i >= 0; i--) {
+                const orb = orbElements[i];
+                orb.className = 'orb fading';
+                await sleep(80); // Quick succession
+            }
+            
+            // Wait a moment, then fully turn off
+            await sleep(1500);
+            
+            for (let i = totalOrbs - 1; i >= 0; i--) {
+                const orb = orbElements[i];
+                orb.className = 'orb off';
+                await sleep(60);
+            }
+            
+            document.getElementById('phaseText').textContent = 'Animation complete';
+            document.getElementById('statusText').textContent = 'Ready to start transcription';
+            currentPhase = 'ready';
+        }
+
+        // New animation flow
+        async function startFullAnimation() {
+            if (currentPhase === 'processing') return;
+            
+            currentPhase = 'processing';
+            document.getElementById('statusText').textContent = 'Transcribing audio...';
+            document.getElementById('phaseText').textContent = 'Processing audio...';
+            
+            // Phase 1: Switch to processing glow (brighter pulsing)
+            setProcessingGlow();
+            
+            // Simulate transcription time (5-15 seconds for demo)
+            const transcriptionTime = 8000; // 8 seconds for demo
+            
+            if (transcriptionTime > 5000) {
+                // Long transcription: boost glow after 20-30%
+                setTimeout(() => {
+                    document.getElementById('phaseText').textContent = 'Deep analysis in progress...';
+                    setBoostGlow();
+                }, transcriptionTime * 0.25);
+            }
+            
+            // Wait for "transcription" to complete
+            await sleep(transcriptionTime);
+            
+            // Phase 2: Transcription finished - quick progress rush left to right
+            document.getElementById('phaseText').textContent = 'Transcription complete!';
+            document.getElementById('statusText').textContent = 'Building transcript...';
+            await progressRush(1200); // 1.2 seconds rush
+            
+            // Phase 3: Hold completed state briefly
+            await sleep(2000);
+            
+            // Phase 4: Fade out backwards and return to idle
+            document.getElementById('phaseText').textContent = 'Ready for next transcription';
+            document.getElementById('statusText').textContent = 'Ready to transcribe';
+            await fadeOutProgress();
+            
+            currentPhase = 'idle';
+        }
+
+        // Quick transcription (under 5 seconds)
+        async function quickTranscription() {
+            if (currentPhase === 'processing') return;
+            
+            currentPhase = 'processing';
+            document.getElementById('statusText').textContent = 'Quick transcription...';
+            document.getElementById('phaseText').textContent = 'Processing short audio...';
+            
+            // Just processing glow, no boost
+            setProcessingGlow();
+            await sleep(3000); // 3 seconds
+            
+            // Quick rush and fade
+            document.getElementById('phaseText').textContent = 'Complete!';
+            await progressRush(800);
+            await sleep(1500);
+            await fadeOutProgress();
+            
+            document.getElementById('phaseText').textContent = 'Ready for next transcription';
+            document.getElementById('statusText').textContent = 'Ready to transcribe';
+            currentPhase = 'idle';
+        }
+
+        // Test individual effects
+        async function testProgressRush() {
+            setProcessingGlow();
+            await sleep(500);
+            await progressRush(1000);
+            await sleep(1000);
+            setIdleGlow();
+        }
+
+        async function testBoostGlow() {
+            setProcessingGlow();
+            await sleep(1000);
+            setBoostGlow();
+            await sleep(3000);
+            setIdleGlow();
+        }
+
+        function resetToIdle() {
+            currentPhase = 'idle';
+            setIdleGlow();
+            document.getElementById('statusText').textContent = 'Ready to transcribe';
+            document.getElementById('phaseText').textContent = 'Orbs glow softly, waiting for transcription';
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        // Initialize
+        initializeOrbs();
+    </script>
+</body>
+</html>
