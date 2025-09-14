@@ -1,0 +1,786 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Scriber Pro - AI-Powered Transcription That Actually Works</title>
+    <meta name="description" content="Transcribe 4.5-hour videos in under 4 minutes. Offline, private, and faster than anything else on macOS. No subscriptions, no cloud uploads." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Scriber Pro - AI-Powered Transcription That Actually Works" />
+    <meta property="og:description" content="Transcribe 4.5-hour videos in under 4 minutes. Offline, private, and faster than anything else on macOS." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Additional SEO -->
+    <meta name="keywords" content="transcription, macOS, offline transcription, AI transcription, video to text, audio to text, Mac app, privacy" />
+  </head>
+  <body class="bg-gradient-to-b from-[#070A13] to-[#080E1A] min-h-screen text-white">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-[#070A13]/80 border-b border-white/10">
+      <nav class="flex items-center justify-between max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center gap-4">
+          <div class="app-icon bg-cyan-500/20 rounded-full w-9 h-9 flex items-center justify-center">
+            <div class="waveform-glyph" id="headerWaveform">
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-lg font-semibold">Scriber Pro</h1>
+            <p class="text-sm text-white/60">AI transcription, offline & private</p>
+          </div>
+        </div>
+        <div class="glass-button">
+          <a href="#download" class="px-6 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium hover:bg-white/20 transition-colors">
+            Get Scriber Pro
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section - Above the fold conversion focus -->
+    <section class="relative px-6 pt-32 pb-20 min-h-screen flex items-center">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left: Value Proposition -->
+          <div class="text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-400/20 rounded-full text-sm text-cyan-400 mb-6">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+              Offline & Private
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              Transcribe <span class="text-cyan-400">4.5-hour</span> videos in <span class="text-cyan-400">4 minutes</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl lg:mx-0 mx-auto">
+              The fastest offline transcription app for macOS. No subscriptions, no cloud uploads, no compromises.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <div class="glass-button inline-block">
+                <a href="#download" class="inline-flex items-center px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition-all duration-300 transform hover:scale-105">
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2L3 10h4v6h6v-6h4l-7-8z"/>
+                  </svg>
+                  Download for Mac
+                </a>
+              </div>
+              <div class="glass-button inline-block">
+                <a href="#demo" class="inline-flex items-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-medium rounded-full transition-colors border border-white/20">
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M8 5v10l8-5-8-5z"/>
+                  </svg>
+                  See it in action
+                </a>
+              </div>
+            </div>
+            
+            <!-- Social Proof -->
+            <div class="flex items-center gap-6 text-sm text-white/60 justify-center lg:justify-start">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span>macOS optimized</span>
+              </div>
+              <div>•</div>
+              <div>Privacy-first design</div>
+              <div>•</div>
+              <div>One-time purchase</div>
+            </div>
+          </div>
+          
+          <!-- Right: App Screenshot -->
+          <div class="lg:pl-8">
+            <div class="glass-card max-w-2xl mx-auto">
+              <div class="glass-ornament"></div>
+              <img 
+                src="/images/MainScreenSS_1757880463564.png" 
+                alt="Scriber Pro main interface showing Living Orb progress system"
+                class="w-full rounded-2xl relative z-10 shadow-2xl"
+              />
+            </div>
+            
+            <!-- Floating feature callouts -->
+            <div class="relative -mt-16">
+              <div class="absolute right-4 top-8 glass-card px-4 py-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <div class="orb progress-active w-3 h-3"></div>
+                  <span>Living Orb Progress</span>
+                </div>
+              </div>
+              <div class="absolute left-4 bottom-8 glass-card px-4 py-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                  <span>100% Offline</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="px-6 py-20 bg-gradient-to-b from-transparent to-[#0A0F1A]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Stop waiting <span class="text-red-400">hours</span> for transcriptions
+          </h2>
+          <p class="text-xl text-white/70 max-w-3xl mx-auto">
+            Most transcription services are slow, expensive, and require uploading your private content to the cloud. 
+            There's a better way.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Before: The Problem -->
+          <div class="glass-card p-8 border-red-400/20">
+            <div class="glass-ornament opacity-30"></div>
+            <div class="relative z-10">
+              <div class="text-red-400 text-sm font-semibold mb-4 uppercase tracking-wider">Before</div>
+              <h3 class="text-2xl font-bold mb-6">The old way is broken</h3>
+              <ul class="space-y-4 text-white/80">
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Wait hours or days for results</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Upload private content to unknown servers</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Pay monthly subscriptions forever</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Poor accuracy on technical content</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Limited export formats</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- After: The Solution -->
+          <div class="glass-card p-8 border-cyan-400/20">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <div class="text-cyan-400 text-sm font-semibold mb-4 uppercase tracking-wider">After</div>
+              <h3 class="text-2xl font-bold mb-6">Scriber Pro fixes everything</h3>
+              <ul class="space-y-4 text-white/80">
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Get results in minutes, not hours</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Everything stays on your Mac</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>One-time purchase, own it forever</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>AI-powered accuracy for any content</div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>Export to 9+ formats instantly</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speed Proof Section -->
+    <section id="demo" class="px-6 py-20 relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/5 to-transparent"></div>
+      <div class="max-w-6xl mx-auto relative">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-6xl font-bold mb-6">
+            <span class="text-cyan-400">Impossibly</span> fast
+          </h2>
+          <p class="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
+            While others take hours, Scriber Pro transcribes a 4.5-hour tutorial in just 3 minutes and 58 seconds.
+            Most files under 10 minutes? Done in under 5 seconds.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <!-- Speed Stats -->
+          <div class="glass-card p-8 text-center">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <div class="text-4xl font-bold text-cyan-400 mb-2">3:58</div>
+              <div class="text-white/60">to transcribe 4.5 hours</div>
+            </div>
+          </div>
+          
+          <div class="glass-card p-8 text-center">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <div class="text-4xl font-bold text-cyan-400 mb-2">&lt;5s</div>
+              <div class="text-white/60">for 10-minute files</div>
+            </div>
+          </div>
+          
+          <div class="glass-card p-8 text-center">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <div class="text-4xl font-bold text-cyan-400 mb-2">100%</div>
+              <div class="text-white/60">offline processing</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Living Orb Demo -->
+        <div class="glass-card p-8 text-center max-w-2xl mx-auto">
+          <div class="glass-ornament"></div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-semibold mb-4">Watch the Living Orb system in action</h3>
+            <div class="flex justify-center items-center gap-3 mb-4" id="heroOrbProgress">
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+              <div class="orb idle-glow"></div>
+            </div>
+            <p class="text-white/60 text-sm">
+              Each orb lights up as your transcription progresses. It's surprisingly satisfying to watch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="px-6 py-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            Everything you need. Nothing you don't.
+          </h2>
+          <p class="text-xl text-white/70 max-w-3xl mx-auto">
+            Scriber Pro is designed for professionals who need accurate transcriptions fast, 
+            without compromising their privacy or budget.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature: Settings/Customization -->
+          <div class="glass-card p-6">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <img 
+                src="/images/SettingsSS_1757880463564.png" 
+                alt="Scriber Pro settings panel"
+                class="w-full rounded-lg mb-4 shadow-lg"
+              />
+              <h3 class="text-xl font-bold mb-3 text-cyan-400">Personalize Everything</h3>
+              <p class="text-white/70 mb-4">Choose your export format, language, output quality, and more. Make Scriber Pro work exactly how you want.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">9 Export Formats</span>
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Multiple Languages</span>
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Quality Control</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature: Library -->
+          <div class="glass-card p-6">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <img 
+                src="/images/LibrarySS_1757880463564.png" 
+                alt="Scriber Pro transcription library"
+                class="w-full rounded-lg mb-4 shadow-lg"
+              />
+              <h3 class="text-xl font-bold mb-3 text-cyan-400">Organized Library</h3>
+              <p class="text-white/70 mb-4">All your transcriptions in one place. Search, sort, tag, and manage your content with ease.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Search & Filter</span>
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Custom Tags</span>
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Smart Sorting</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature: Export Options -->
+          <div class="glass-card p-6">
+            <div class="glass-ornament"></div>
+            <div class="relative z-10">
+              <img 
+                src="/images/FormatTypeDD_1757880463564.png" 
+                alt="Export format options"
+                class="w-full rounded-lg mb-4 shadow-lg"
+              />
+              <h3 class="text-xl font-bold mb-3 text-cyan-400">Export Anywhere</h3>
+              <p class="text-white/70 mb-4">Export to the format you need: Plain text, Markdown, SRT subtitles, and more.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">SRT Subtitles</span>
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Markdown</span>
+                <span class="px-2 py-1 bg-white/10 rounded text-xs">Plain Text</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- iCloud Sync - Full Width -->
+        <div class="glass-card p-8 mt-8">
+          <div class="glass-ornament"></div>
+          <div class="relative z-10 grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-2xl font-bold mb-4 text-cyan-400">Seamless iCloud Sync</h3>
+              <p class="text-white/80 mb-6">
+                Access your transcriptions anywhere. Scriber Pro syncs your library across all your Macs 
+                using iCloud, so your files are always available when you need them.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-cyan-500/20 rounded-full text-sm">Automatic Sync</span>
+                <span class="px-3 py-1 bg-cyan-500/20 rounded-full text-sm">Cross-Device</span>
+                <span class="px-3 py-1 bg-cyan-500/20 rounded-full text-sm">Privacy First</span>
+              </div>
+            </div>
+            <div>
+              <img 
+                src="/images/Artboard 2 (2800x1800)_1757879768761.png" 
+                alt="iCloud sync visualization"
+                class="w-full rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="px-6 py-20 bg-gradient-to-b from-transparent to-[#0A0F1A]">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          Join thousands of professionals who trust Scriber Pro
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass-card p-6">
+            <div class="glass-ornament opacity-50"></div>
+            <div class="relative z-10">
+              <div class="text-yellow-400 text-lg mb-3">★★★★★</div>
+              <p class="text-white/80 mb-4 italic">
+                "Finally, a transcription app that actually works offline and doesn't steal my data."
+              </p>
+              <div class="text-sm text-white/60">
+                — Content Creator
+              </div>
+            </div>
+          </div>
+          
+          <div class="glass-card p-6">
+            <div class="glass-ornament opacity-50"></div>
+            <div class="relative z-10">
+              <div class="text-yellow-400 text-lg mb-3">★★★★★</div>
+              <p class="text-white/80 mb-4 italic">
+                "The speed is incredible. What used to take hours now takes minutes."
+              </p>
+              <div class="text-sm text-white/60">
+                — Podcast Producer
+              </div>
+            </div>
+          </div>
+          
+          <div class="glass-card p-6">
+            <div class="glass-ornament opacity-50"></div>
+            <div class="relative z-10">
+              <div class="text-yellow-400 text-lg mb-3">★★★★★</div>
+              <p class="text-white/80 mb-4 italic">
+                "Worth every penny. No subscriptions, just results."
+              </p>
+              <div class="text-sm text-white/60">
+                — Researcher
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="download" class="px-6 py-20 relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-cyan-500/10"></div>
+      <div class="max-w-4xl mx-auto text-center relative">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">
+          Ready to transcribe at the speed of thought?
+        </h2>
+        <p class="text-xl text-white/80 mb-12">
+          Join thousands of professionals who've made the switch to fast, private, offline transcription.
+        </p>
+        
+        <!-- Pricing/Value Prop -->
+        <div class="glass-card p-8 mb-12 max-w-2xl mx-auto">
+          <div class="glass-ornament"></div>
+          <div class="relative z-10">
+            <div class="text-3xl font-bold text-cyan-400 mb-2">One-time purchase</div>
+            <div class="text-white/60 mb-6">No subscriptions. No monthly fees. Own it forever.</div>
+            
+            <div class="grid md:grid-cols-2 gap-6 text-left">
+              <div>
+                <h4 class="font-semibold mb-2">✅ What's included:</h4>
+                <ul class="text-sm text-white/80 space-y-1">
+                  <li>• Unlimited transcriptions</li>
+                  <li>• 9 export formats</li>
+                  <li>• iCloud sync</li>
+                  <li>• Lifetime updates</li>
+                  <li>• Privacy guaranteed</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 class="font-semibold mb-2">📋 System Requirements:</h4>
+                <ul class="text-sm text-white/80 space-y-1">
+                  <li>• macOS Ventura 13.0+</li>
+                  <li>• Apple Silicon or Intel</li>
+                  <li>• 2GB storage space</li>
+                  <li>• iCloud (optional)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Download Button -->
+        <div class="glass-button inline-block mb-6">
+          <a href="https://apps.apple.com/app/scriber-pro" class="inline-flex items-center px-12 py-6 bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-black font-bold rounded-full transition-all duration-300 transform hover:scale-105 text-lg">
+            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2L3 10h4v6h6v-6h4l-7-8z"/>
+            </svg>
+            Download for Mac
+          </a>
+        </div>
+        
+        <div class="text-white/60 text-sm">
+          Available on the Mac App Store • 14-day money-back guarantee
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="px-6 py-12 border-t border-white/10 bg-[#060912]">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="app-icon bg-cyan-500/20 rounded-full w-8 h-8 flex items-center justify-center">
+                <div class="waveform-glyph-small">
+                  <div class="bar-mini"></div>
+                  <div class="bar-mini"></div>
+                  <div class="bar-mini"></div>
+                </div>
+              </div>
+              <div class="font-semibold">Scriber Pro</div>
+            </div>
+            <p class="text-white/60 text-sm">
+              Professional offline transcription for macOS. Private, fast, and built for professionals.
+            </p>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold mb-3">Product</h4>
+            <ul class="space-y-2 text-sm text-white/60">
+              <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+              <li><a href="#download" class="hover:text-white transition-colors">Download</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">System Requirements</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold mb-3">Support</h4>
+            <ul class="space-y-2 text-sm text-white/60">
+              <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
+          <div>© 2024 Scriber Pro. All rights reserved.</div>
+          <div>Made with ❤️ for Mac users who value privacy</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Enhanced Styles -->
+    <style>
+      /* Waveform Animations */
+      .waveform-glyph {
+        width: 20px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+      }
+
+      .waveform-bar {
+        width: 1px;
+        background: rgb(0, 255, 255);
+        border-radius: 0.5px;
+        transform-origin: center;
+      }
+
+      .waveform-glyph-small {
+        width: 14px;
+        height: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+      }
+
+      .bar-mini {
+        width: 1px;
+        height: 4px;
+        background: rgba(0, 255, 255, 0.6);
+        border-radius: 0.5px;
+      }
+
+      /* Living Orb Animations */
+      .orb {
+        width: 12px;
+        height: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        opacity: 0.1;
+        transform: scale(0.8);
+      }
+
+      .orb.idle-glow {
+        background: rgba(0, 255, 255, 0.20);
+        box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+        opacity: 0.20;
+        transform: scale(0.85);
+        animation: advancedIdlePulse 4s ease-in-out infinite;
+      }
+
+      .orb.processing {
+        background: rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+        opacity: 0.35;
+        transform: scale(0.9);
+        animation: advancedProcessingPulse 2s ease-in-out infinite;
+      }
+
+      .orb.progress-active {
+        background: #00ffff;
+        box-shadow: 0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.6);
+        opacity: 1.0;
+        transform: scale(1.0);
+        transition: all 0.2s ease;
+      }
+
+      @keyframes advancedIdlePulse {
+        0%, 100% { 
+          opacity: 0.16;
+          box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+          transform: scale(0.85);
+        }
+        25% { 
+          opacity: 0.20;
+          box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+          transform: scale(0.88);
+        }
+        50% { 
+          opacity: 0.24;
+          box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+          transform: scale(0.91);
+        }
+        75% { 
+          opacity: 0.22;
+          box-shadow: 0 0 4px rgba(0, 255, 255, 0.28);
+          transform: scale(0.89);
+        }
+      }
+
+      @keyframes advancedProcessingPulse {
+        0%, 100% { 
+          opacity: 0.35;
+          transform: scale(0.9);
+        }
+        50% { 
+          opacity: 0.5;
+          transform: scale(0.95);
+        }
+      }
+
+      /* Enhanced Glass Morphism */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        box-shadow: 
+          0 10px 30px rgba(0, 0, 0, 0.5),
+          inset 0 1px 0 rgba(255, 255, 255, 0.18);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+      }
+      
+      .glass-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(0, 255, 255, 0.2);
+      }
+      
+      /* Animated Glass Ornaments */
+      .glass-ornament {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+          radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+          radial-gradient(circle at 70% 82%, rgba(0, 255, 255, 0.18) 0%, transparent 50%);
+        filter: blur(24px);
+        mix-blend-mode: plus-lighter;
+        animation: ornamentMove 8s ease-in-out infinite alternate;
+        pointer-events: none;
+      }
+      
+      @keyframes ornamentMove {
+        0% { 
+          background: 
+            radial-gradient(circle at 22% 16%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+            radial-gradient(circle at 64% 76%, rgba(0, 255, 255, 0.18) 0%, transparent 50%);
+        }
+        100% { 
+          background: 
+            radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+            radial-gradient(circle at 76% 88%, rgba(0, 255, 255, 0.18) 0%, transparent 50%);
+        }
+      }
+
+      .glass-button {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+      
+      .glass-button:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Responsive text */
+      @media (max-width: 640px) {
+        .text-4xl { font-size: 2rem; }
+        .text-6xl { font-size: 3rem; }
+        .text-7xl { font-size: 3.5rem; }
+      }
+    </style>
+
+    <script>
+      // Waveform Animation
+      const pattern = [0.25, 0.65, 0.95, 0.55, 0.85, 0.75, 0.10];
+      
+      function animateWaveform(containerId, speed = 6.0, amp = 0.6, color = 'rgb(0, 255, 255)') {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        
+        const bars = container.querySelectorAll('.waveform-bar');
+        const containerHeight = container.offsetHeight;
+        
+        function animate() {
+          const t = Date.now() / 1000 * speed;
+          
+          bars.forEach((bar, i) => {
+            const baseH = Math.max(2, pattern[i] * containerHeight);
+            const scale = 1.0 + amp * 0.2 * Math.sin(t + i * 1.6);
+            
+            bar.style.height = `${baseH}px`;
+            bar.style.transform = `scaleY(${scale})`;
+            bar.style.background = color;
+          });
+          
+          requestAnimationFrame(animate);
+        }
+        
+        animate();
+      }
+      
+      // Living Orb demo progression
+      function startOrbDemo() {
+        const orbProgress = document.getElementById('heroOrbProgress');
+        if (!orbProgress) return;
+        
+        const orbs = orbProgress.querySelectorAll('.orb');
+        let currentIndex = 0;
+        
+        setInterval(() => {
+          // Reset all orbs to idle
+          orbs.forEach(orb => {
+            orb.className = 'orb idle-glow';
+          });
+          
+          // Activate next orb
+          if (orbs[currentIndex]) {
+            orbs[currentIndex].className = 'orb progress-active';
+          }
+          
+          currentIndex = (currentIndex + 1) % orbs.length;
+        }, 600);
+      }
+      
+      // Start animations when page loads
+      document.addEventListener('DOMContentLoaded', () => {
+        animateWaveform('headerWaveform', 6.0, 0.2, 'rgb(0, 255, 255)');
+        startOrbDemo();
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

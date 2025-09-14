@@ -1,0 +1,398 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Scriber Pro - Offline transcription, beautifully simple.</title>
+    <meta name="description" content="Professional offline transcription for macOS. Convert audio and video to text in seconds with AI-powered accuracy and complete privacy." />
+  </head>
+  <body class="bg-gradient-to-b from-[#070A13] to-[#080E1A] min-h-screen text-white">
+    <!-- Header -->
+    <header class="relative z-50 px-6 py-4">
+      <nav class="flex items-center justify-between max-w-7xl mx-auto">
+        <div class="flex items-center gap-4">
+          <div class="app-icon bg-cyan-500/20 rounded-full w-9 h-9 flex items-center justify-center">
+            <div class="waveform-glyph" id="headerWaveform">
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+              <div class="waveform-bar"></div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-lg font-semibold">Scriber Pro</h1>
+            <p class="text-sm text-white/60">Offline transcription, beautifully simple.</p>
+          </div>
+        </div>
+        <div class="glass-button">
+          <a href="#download" class="px-6 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-medium hover:bg-white/20 transition-colors">
+            Download
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative px-6 py-20">
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          Quick <span class="text-cyan-400">&</span><br>
+          <span class="text-4xl md:text-6xl">Accurate Transcriptions</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
+          Turn virtually any video or audio into text in seconds
+        </p>
+        
+        <!-- Subtle Transcription Accents -->
+        <div class="flex justify-center items-center gap-12 mb-12">
+          <div class="orb idle-glow"></div>
+          <div class="orb idle-glow"></div>
+          <div class="orb idle-glow"></div>
+        </div>
+        
+        <!-- App Preview -->
+        <div class="glass-card max-w-4xl mx-auto">
+          <div class="glass-ornament"></div>
+          <img 
+            src="/images/Artboard 1 (2800x1800)_1757879768761.png" 
+            alt="Scriber Pro transcription interface"
+            class="w-full rounded-2xl relative z-10"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Speed Section -->
+    <section class="px-6 py-20 relative">
+      <!-- Decorative orbs in corners -->
+      <div class="absolute top-8 left-8 orb idle-glow opacity-30"></div>
+      <div class="absolute top-8 right-8 orb idle-glow opacity-25"></div>
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">
+          <span class="text-cyan-400">Speed</span>
+        </h2>
+        <p class="text-xl text-white/80 mb-12 max-w-3xl mx-auto">
+          Honestly, this is probably one of the fastest offline transcription applications available, 
+          with the level of simplicity and optimization that Scriber provides.
+        </p>
+        
+        <div class="glass-card max-w-2xl mx-auto p-8">
+          <div class="glass-ornament"></div>
+          <div class="text-center mb-6">
+            <div class="text-6xl font-bold text-cyan-400 mb-2">3:58</div>
+            <div class="text-xl text-white/80">4.5-hour tutorial transcribed in</div>
+          </div>
+          <p class="text-white/70">
+            Most audio under 10 minutes is transcribed in just a few seconds—often under 5 seconds—feels instant.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="px-6 py-20 relative">
+      <!-- Subtle accent orbs -->
+      <div class="absolute bottom-12 left-1/4 orb idle-glow opacity-20"></div>
+      <div class="absolute top-12 right-1/3 orb idle-glow opacity-25"></div>
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Personalize Your Workflow -->
+          <div class="glass-card p-8">
+            <div class="glass-ornament"></div>
+            <h3 class="text-2xl font-bold mb-4 text-cyan-400">Personalize Your Workflow</h3>
+            <p class="text-white/80 mb-6">Customize Export Format, Language, & More!</p>
+            <img 
+              src="/images/Artboard 4 (2800x1800)_1757879768761.png" 
+              alt="Settings customization interface"
+              class="w-full rounded-lg"
+            />
+          </div>
+          
+          <!-- Comprehensive Library -->
+          <div class="glass-card p-8">
+            <div class="glass-ornament"></div>
+            <h3 class="text-2xl font-bold mb-4 text-cyan-400">Your Comprehensive<br>Transcription Library</h3>
+            <p class="text-white/80 mb-6">Your transcription history at your fingertips – search, sort & tag</p>
+            <img 
+              src="/images/Artboard 3 (2800x1800)_1757879768761.png" 
+              alt="Library management interface"
+              class="w-full rounded-lg"
+            />
+          </div>
+          
+          <!-- Seamless iCloud Sync -->
+          <div class="glass-card p-8 md:col-span-2">
+            <div class="glass-ornament"></div>
+            <h3 class="text-2xl font-bold mb-4 text-cyan-400">Seamless iCloud Sync</h3>
+            <p class="text-white/80 mb-6">Access & Share Your Transcriptions Anywhere</p>
+            <img 
+              src="/images/Artboard 2 (2800x1800)_1757879768761.png" 
+              alt="iCloud sync interface"
+              class="w-full rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="px-6 py-20 relative">
+      <!-- Final accent orbs -->
+      <div class="absolute top-16 left-16 orb idle-glow opacity-20"></div>
+      <div class="absolute bottom-16 right-16 orb idle-glow opacity-25"></div>
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Ready to get started?</h2>
+        <p class="text-xl text-white/80 mb-12">
+          Download Scriber Pro and experience the fastest offline transcription on macOS.
+        </p>
+        
+        <div class="glass-card p-8 mb-8">
+          <div class="glass-ornament"></div>
+          <h3 class="text-xl font-semibold mb-4">System Requirements</h3>
+          <ul class="text-white/80 space-y-2">
+            <li>• macOS Ventura 13.0 or later</li>
+            <li>• Apple Silicon (M1/M2/M3) or Intel processor</li>
+            <li>• At least 2GB of available storage space</li>
+            <li>• iCloud account (optional, for sync features)</li>
+          </ul>
+        </div>
+        
+        <div class="glass-button inline-block">
+          <a href="#" class="inline-flex items-center px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition-colors">
+            Download for Mac
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Styles and Scripts -->
+    <style>
+      /* Waveform Animation */
+      .waveform-glyph {
+        width: 20px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+      }
+
+      .waveform-bar {
+        width: 1px;
+        background: rgb(0, 255, 255);
+        border-radius: 0.5px;
+        transform-origin: center;
+      }
+
+      /* Living Orb Animations */
+      .orb-progress {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 20px 0;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+
+      .orb {
+        width: 12px;
+        height: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        opacity: 0.1;
+        transform: scale(0.8);
+      }
+
+      .orb.idle-glow {
+        background: rgba(0, 255, 255, 0.20);
+        box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+        opacity: 0.20;
+        transform: scale(0.85);
+        animation: advancedIdlePulse 4s ease-in-out infinite;
+      }
+
+      .orb.processing {
+        background: rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+        opacity: 0.35;
+        transform: scale(0.9);
+        animation: advancedProcessingPulse 2s ease-in-out infinite;
+      }
+
+      .orb.progress-active {
+        background: #00ffff;
+        box-shadow: 0 0 12px #00ffff, 0 0 20px rgba(0, 255, 255, 0.6);
+        opacity: 1.0;
+        transform: scale(1.0);
+        transition: all 0.2s ease;
+      }
+
+      @keyframes advancedIdlePulse {
+        0%, 100% { 
+          opacity: 0.16;
+          box-shadow: 0 0 3px rgba(0, 255, 255, 0.2);
+          transform: scale(0.85);
+        }
+        25% { 
+          opacity: 0.20;
+          box-shadow: 0 0 4px rgba(0, 255, 255, 0.25);
+          transform: scale(0.88);
+        }
+        50% { 
+          opacity: 0.24;
+          box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+          transform: scale(0.91);
+        }
+        75% { 
+          opacity: 0.22;
+          box-shadow: 0 0 4px rgba(0, 255, 255, 0.28);
+          transform: scale(0.89);
+        }
+      }
+
+      @keyframes advancedProcessingPulse {
+        0%, 100% { 
+          opacity: 0.35;
+          transform: scale(0.9);
+        }
+        50% { 
+          opacity: 0.5;
+          transform: scale(0.95);
+        }
+      }
+
+      /* Enhanced Glass Morphism - Design Guide Specs */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        box-shadow: 
+          0 10px 30px rgba(0, 0, 0, 0.5),
+          inset 0 1px 0 rgba(255, 255, 255, 0.18);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      /* Animated Glass Ornaments */
+      .glass-ornament {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+          radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+          radial-gradient(circle at 70% 82%, rgba(0, 255, 255, 0.18) 0%, transparent 50%);
+        filter: blur(24px);
+        mix-blend-mode: plus-lighter;
+        animation: ornamentMove 8s ease-in-out infinite alternate;
+        pointer-events: none;
+      }
+      
+      @keyframes ornamentMove {
+        0% { 
+          background: 
+            radial-gradient(circle at 22% 16%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+            radial-gradient(circle at 64% 76%, rgba(0, 255, 255, 0.18) 0%, transparent 50%);
+        }
+        100% { 
+          background: 
+            radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+            radial-gradient(circle at 76% 88%, rgba(0, 255, 255, 0.18) 0%, transparent 50%);
+        }
+      }
+
+      .glass-button {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+      
+      .glass-button:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Hover effects */
+      .orb:hover {
+        transform: scale(1.2) !important;
+        opacity: 0.8 !important;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.8) !important;
+      }
+    </style>
+
+    <script>
+      // Waveform Animation
+      const pattern = [0.25, 0.65, 0.95, 0.55, 0.85, 0.75, 0.10];
+      
+      function animateWaveform(containerId, speed = 6.0, amp = 0.6, color = 'rgb(0, 255, 255)') {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        
+        const bars = container.querySelectorAll('.waveform-bar');
+        const containerHeight = container.offsetHeight;
+        
+        function animate() {
+          const t = Date.now() / 1000 * speed;
+          
+          bars.forEach((bar, i) => {
+            const baseH = Math.max(2, pattern[i] * containerHeight);
+            const scale = 1.0 + amp * 0.2 * Math.sin(t + i * 1.6); // Reduced amplitude for header
+            
+            bar.style.height = `${baseH}px`;
+            bar.style.transform = `scaleY(${scale})`;
+            bar.style.background = color;
+          });
+          
+          requestAnimationFrame(animate);
+        }
+        
+        animate();
+      }
+      
+      // Start animations
+      document.addEventListener('DOMContentLoaded', () => {
+        animateWaveform('headerWaveform', 6.0, 0.2, 'rgb(0, 255, 255)');
+        
+        // Living Orb demo progression
+        const orbProgress = document.getElementById('heroOrbProgress');
+        if (orbProgress) {
+          const orbs = orbProgress.querySelectorAll('.orb');
+          
+          // Demo progression every few seconds
+          let currentIndex = 0;
+          setInterval(() => {
+            // Reset all orbs to idle
+            orbs.forEach(orb => {
+              orb.className = 'orb idle-glow';
+            });
+            
+            // Activate next orb
+            if (orbs[currentIndex]) {
+              orbs[currentIndex].className = 'orb progress-active';
+            }
+            
+            currentIndex = (currentIndex + 1) % orbs.length;
+          }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>
